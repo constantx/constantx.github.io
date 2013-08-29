@@ -1,0 +1,8 @@
+{
+  "site-title": "constantx.com",
+  
+  "navbar": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about"}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+	"template_dir": "templates",
+	"content_dir": "contents",
+	"output_dir": "../",
+
+	"server": {
+		"port": 5000
+	},
+
+	"bundles": {
+		"/css/main.css": [
+			"/css/main.styl"
+		]
+	},
+
+  "plugins": {
+    "compilers": {
+      ".css": "punch-stylus-compiler"
+    }
+  }
+}
