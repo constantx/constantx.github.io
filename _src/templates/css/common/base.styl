@@ -44,7 +44,7 @@ color_main        = #f4524e
 color_light       = #fafaf8
 color_text        = #222
 
-base_font_size_px = 18
+base_font_size_px = 22
 base_font_size    = (base_font_size_px/16*100)%
 base_leading      = 1.6
 
@@ -58,13 +58,9 @@ font_text         = tk_text, Georgia, serif
 font_heading      = tk_heading, Georgia, serif
 font_meta         = "Panic Sans", inconsolata, Monaco, 'Courier New', monospace
 
-
-
-// grid setup
-numCol            = 1..12
-numColOffset      = 1..11
-
 /////////////////////////////////////////////////////// GRID
+numCol            = 1..12
+
 calWidth(n)
   n * 8.3333%
 
@@ -90,59 +86,66 @@ calWidth(n)
 .row
   @extend .clearfix
 
-.col
+.is-a-col
   float: left
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
   position: relative
   padding-left: 1.5%
   padding-right: 1.5%
   min-height: 1px
 
+.col
+  @extend .is-a-col
   &.centered
     float: none
     margin-left: auto
     margin-right: auto
 
 
-// make col
 for num in numCol
+  // make col
   .col-{num}
     width: calWidth(num)
 
-// make offset
-for num in numColOffset
+  // make col offset
   .offset-{num}
     margin-left: calWidth(num)
 
-//
+/////////////////////////////////////////////////////// Responsive
 @media only screen and (max-width: 767px)
-  // make mobile grid
-  for num in numCol
-    .col-m-{num}
-      float: left !important
-      padding-right: 1% !important
-      width: calWidth(num) !important
-
   // make normal column become full width
   .col
     float: none
+    padding-left: 2%
+    padding-right: 2%
     width: 100% !important
 
-  // make all offset column full column on mobile
-  for num in numColOffset
+  // make mobile grid
+  for num in numCol
+    .col-m-{num}
+      @extend .is-a-col
+      width: calWidth(num) !important
+
+    // make all offset column full column on mobile
     .offset-{num}
       margin-left: 0
 
 /////////////////////////////////////////////////////// Base Typography
 
-calcLeading(leading, fontSize)
-  result = leading/fontSize
+calcLeading(target_leading, fontSize)
+  // this is a recursive function
+  // it calculates the leading for a targeted line-height
+  // if target_leading is less then one normal line for that fontSize
+  // it'll try to add an extra half line via base_leading
+  result = target_leading/fontSize
   if result < 1
-    result = calcLeading(leading*2, fontSize)
+    result = calcLeading(target_leading + (base_leading/2), fontSize)
   else
     return result
 
 setHeading(fontSize)
-  font-size: fontSize
+  font-size: (fontSize)em
   line-height: calcLeading(base_leading, fontSize)
 
 body
@@ -156,17 +159,23 @@ body
 
 h1,h2,h3,h4,h5,h6
   font-family: font_heading
-  font-weight: bold
+  font-weight: normal
+  margin-top: 0
+  margin-bottom: 0.5em
 
 h1
-  setHeading(3.122em)
+  setHeading(2.25)
 h2
-  setHeading(2.25em)
+  setHeading(2.081)
 h3
-  setHeading(2.081em)
+  setHeading(1.5)
 h4
-  setHeading(1.5em)
+  setHeading(1.387)
 h5
-  setHeading(1.387em)
+  setHeading(1)
 h6
-  setHeading(1em)
+  setHeading(0.925)
+
+.strong
+strong
+  font-weight: bold
