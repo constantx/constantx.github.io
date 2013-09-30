@@ -281,17 +281,17 @@ body {
   color: #404041;
   background-color: #f9f9f9;
 }
-@media only screen and (max-width: 1366px) {
+@media only screen and (min-width: 1366px) {
   body {
     font-size: 125%;
   }
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (min-width: 769px) {
   body {
     font-size: 112.5%;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) {
   body {
     font-size: 100%;
   }
