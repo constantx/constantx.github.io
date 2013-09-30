@@ -1,12 +1,22 @@
 {{> header }}
 
-<div class='container'>
-  <div class="col col-3">
-    <img src="images/facepict-mustache.png" class="circular full-width">
+<div id="welcome">
+  <div class="container">
+    <div class="col col-2 offset-5">
+      <img src="images/facepict-mustache.png" class="circular cover">
+    </div>
+    <div class="col col-9 offset-1">
+      <h1 class="strong">That&rsquo;s {{{ name }}}</h1>
+      <br>
+    </div>
   </div>
-  <div class="col col-9">
-    <h1 class="strong">That&rsquo;s {{{ name }}}</h1>
-    {{{intro}}}
+</div>
+
+<div id="intro" class="hentry">
+  <div class="container">
+    <div class="col col-8 offset-1 entry-content">
+      {{{intro}}}
+    </div>
   </div>
 </div>
 
