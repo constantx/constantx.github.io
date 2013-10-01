@@ -281,7 +281,7 @@ body {
   color: #404041;
   background-color: #f9f9f9;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
   body {
     font-size: 100%;
   }
@@ -431,6 +431,12 @@ blockquote {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+.main-nav .main-nav-item a:hover {
+  border-bottom: solid 5px #4ebae2;
+}
+.main-nav .main-nav-item.current a {
+  border-bottom: solid 5px #f4524e;
 }
 .main-footer {
   margin-top: 2em;

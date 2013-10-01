@@ -218,7 +218,7 @@ body
   line-height: base_leading
   color: color_text
   background-color: color_bgr
-  @media only screen and (min-width: 480px)
+  @media only screen and (max-width: 480px)
     font-size: 100% // 16px
   @media only screen and (min-width: 769px)
     font-size: 112.5% // 18px
@@ -320,6 +320,13 @@ blockquote
     display: inline-block
     text-transform: uppercase
     letter-spacing: 0.1em
+    a
+      &:hover
+        border-bottom: solid 5px color_main_cool
+
+    &.current
+      a
+        border-bottom: solid 5px color_main
 
 .main-footer
   @extend .centered-content

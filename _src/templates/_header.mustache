@@ -10,26 +10,23 @@
 
   {{! for specific page }}
   {{#page-title}}
-  <title>{{{ site-title }}} {{{ page-title }}}</title>
-  <meta property="og:title" content="{{{ site-title }}} {{{ page-title }}}" />
+    <title>{{{ site-title }}} | {{{ page-title }}}</title>
+    <meta property="og:title" content="{{{ site-title }}} {{{ page-title }}}" />
   {{/page-title}}
 
   {{! if not a page }}
   {{^page-title}}
+    {{! then it could be a post }}
+    {{#title}}
+    <title>{{{ site-title }}} | {{{ title }}}</title>
+    <meta property="og:title" content="{{{ site-title }}} {{{ title }}}" />
+    {{/title}}
 
-  {{! then it could be a post }}
-  {{#title}}
-  <title>{{{ site-title }}} {{{ title }}}</title>
-  <meta property="og:title" content="{{{ site-title }}} {{{ title }}}" />
-  {{/title}}
-
-  {{! not a post?! must be home page }}
-  {{^title}}
-  <title>{{{ site-title }}}</title>
-  <meta property="og:title" content="{{{ site-title }}}" />
-  {{/title}}
-
-
+    {{! not a post?! must be home page }}
+    {{^title}}
+    <title>{{{ site-title }}}</title>
+    <meta property="og:title" content="{{{ site-title }}}" />
+    {{/title}}
   {{/page-title}}
 
   {{! if post has a cover, use it for open graph }}
@@ -94,7 +91,8 @@
 
       <h2>
         <a class='logo' href="/" title="{{ site-title }} by {{ creator }}">
-          {{{ site-title }}}
+          {{#page-title}}{{{ page-title }}}{{/page-title}}
+          {{^page-title}}{{{ site-title }}}{{/page-title}}
         </a>
       </h2>
 
