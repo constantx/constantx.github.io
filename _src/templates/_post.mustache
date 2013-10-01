@@ -1,0 +1,39 @@
+<article
+  class="hentry hentry-single hentry-{{#dasherize}}{{#downcase}}{{title}}{{/downcase}}{{/dasherize}}
+  {{#cover}}hentry-has-cover{{/cover}}">
+
+  <header class='container'>
+    <h2 class="entry-title">{{{ title }}}</h2>
+  </header>
+
+  {{! NOTE: cover url is also used in open graph meta tag }}
+  {{#cover}}
+  <div class="entry-cover">
+    <img src="{{cover}}" alt="{{{ title }}}">
+  </div>
+  {{/cover}}
+
+  <div class="entry-content-wrapper">
+    <div class="container">
+      <div class="entry-content">
+        {{> post-meta }}
+
+        {{{ content }}}
+
+        {{> post-social }}
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <aside role="meta">
+    <div role="tags">
+      <span role="icon" aria-hidden="true" class="icon-tag"></span><span>Tags:</span></span>
+      {{#tags}}
+        <a href="/tag/{{#downcase}}{{.}}{{/downcase}}">{{.}}</a>&nbsp;
+      {{/tags}}
+    </div>
+  </aside>
+  -->
+
+</article>

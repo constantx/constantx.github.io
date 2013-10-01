@@ -1,0 +1,12 @@
+{ "name" : "constantx-github-io",
+	"version" : "1.0.0",
+	"dependencies" : {
+	 	"punch": ">= 0.5.35",
+	 	"punch-blog-content-handler": ">= 0.0.9",
+	 	"punch-current-page-helper": ">= 0.0.1",
+	 	"punch-thirdparty-snippets-helper": ">= 0.0.1",
+		"punch-sitemap-generator": ">= 0.0.5",
+		"underscore": ">= 1.4.2",
+    "punch-stylus-compiler": ">= 0.0.1"
+ 	}
+}

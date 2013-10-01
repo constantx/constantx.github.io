@@ -1,9 +1,13 @@
 {{> header }}
 
-  <div class='container'>
-    <section class="col col-12">
-      Sample layout
-    </section>
-  </div>
+  {{! if it's a post, we use post layout }}
+  {{#is_post}}
+    {{> post}}
+  {{/is_post}}
+
+  {{! if it's not a post, use archive layout }}
+  {{^is_post}}
+    {{> archive}}
+  {{/is_post}}
 
 {{> footer }}

@@ -1,23 +1,29 @@
 {{> header }}
-
-<div id="welcome">
   <div class="container">
-    <div class="col col-2 offset-5">
-      <img src="images/facepict-mustache.png" class="circular cover">
-    </div>
-    <div class="col col-8 offset-2">
-      <h1 class="strong">{{{ name }}}</h1>
-      <br>
-    </div>
-  </div>
-</div>
+    <div class="posts">
+      {{#recent_posts}}
+      <article class="hentry">
 
-<div id="intro" class="hentry">
-  <div class="container">
-    <div class="col col-8 offset-2 entry-content">
-      {{{intro}}}
-    </div>
-  </div>
-</div>
+        <h2 class="entry-title">
+          <a href="{{ permalink }}">{{{ title }}}</a>
+        </h2>
 
+        <div class="entry-content-wrapper">
+          <div class="entry-content entry-summary">
+            {{> post-meta }}
+
+            {{{ content }}}
+
+            {{#is_teaser}}
+            <p class="post-teaser-link">
+              <a href="{{ permalink }}" class="more">read full article</a>
+            </p>
+            {{/is_teaser}}
+          </div>
+        </div>
+      </article>
+      {{/recent_posts}}
+    </div>
+
+  </div>
 {{> footer }}

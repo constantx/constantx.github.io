@@ -1,8 +1,15 @@
-  <footer>
+  <footer class='main-footer'>
+    <div class="container source-org vcard copyright">
+      ©{{current_year}} {{creator}}
+    </div>
   </footer>
 
-  {{! TYPEKIT }}
-  <script type="text/javascript" src="//use.typekit.net/tme8hga.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  {{! vendor scripts }}
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+
+  {{! main scripts }}
+  {{#javascript_bundle}}/js/all.js{{/javascript_bundle}}
+
 </body>
 </html>
