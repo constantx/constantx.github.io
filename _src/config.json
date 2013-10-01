@@ -22,7 +22,7 @@
 
   "generator": {
     "skip_paths": [
-      "/css/stylus/*"
+      "/css/*"
     ]
   },
 
