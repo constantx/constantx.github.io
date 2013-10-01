@@ -3,7 +3,9 @@
   {{#cover}}hentry-has-cover{{/cover}}">
 
   <header class='container'>
-    <h2 class="entry-title">{{{ title }}}</h2>
+    <h2 class="entry-title">
+      <a href="{{ permalink }}">{{{ title }}}</a>
+    </h2>
   </header>
 
   {{! NOTE: cover url is also used in open graph meta tag }}
@@ -15,12 +17,29 @@
 
   <div class="entry-content-wrapper">
     <div class="container">
-      <div class="entry-content">
-        {{> post-meta }}
+      <div class="entry-content offset-2 col col-8">
+        <aside class="entry-meta">
+          <span class="byline author vcard">Author: {{{name}}}&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+          <time class="published" datetime="{{#iso_date}}{{ published_date }}{{/iso_date}}" pubdate>{{#long_date}}{{published_date}}{{/long_date}}</time>
+
+          {{#author}}
+            <a href="//github.com/{{{github}}}" class="author-photo col col-2">
+              <img src="{{{avatar}}}" alt="" class='circular cover'>
+            </a>
+          {{/author}}
+        </aside>
 
         {{{ content }}}
 
-        {{> post-social }}
+        {{#is_teaser}}
+        <p class="post-teaser-link">
+          <a href="{{ permalink }}" class="more">Read&hellip;</a>
+        </p>
+        {{/is_teaser}}
+
+        {{^is_teaser}}
+          {{> post-social }}
+        {{/is_teaser}}
       </div>
     </div>
   </div>

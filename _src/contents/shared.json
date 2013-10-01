@@ -1,8 +1,43 @@
 {
-  "site-title": "constantx.com",
-  
-  "navbar": [
-    { "label": "Home", "href": "/" },
-    { "label": "About", "href": "/about"}
+  "site-title": "Truong &ldquo;T&rdquo; Nguyen",
+
+  "site-author": {
+    "gravatar_url": "https:\/\/0.gravatar.com\/avatar\/bdd22ad361650cddb58011e5d301e67b?d=https%3A%2F%2Fidenticons.github.com%2F78111570a7c73234b9c1d28182759030.png&s=420",
+
+    "social": [
+      {
+        "url": "http:\/\/twitter.com\/constantx",
+        "title": "Twitter",
+        "desc": "I tweeet @constantx"
+      },
+      {
+        "url": "http:\/\/github.com\/constantx",
+        "title": "GitHub",
+        "desc": "I code @consantx"
+      }
+    ]
+  },
+
+  "main-nav": [
+    {
+      "id": "home",
+      "label": "Home",
+      "href": "\/"
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "href": "\/about"
+    },
+    {
+      "id": "work",
+      "label": "Work",
+      "href": "\/work"
+    },
+    {
+      "id": "archive",
+      "label": "Archive",
+      "href": "\/archive"
+    }
   ]
 }

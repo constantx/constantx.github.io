@@ -66,8 +66,8 @@ font_meta         = "Panic Sans", inconsolata, Monaco, 'Courier New', monospace
 
 // grid settings
 numCol            = 1..12
-colGutter         = 1.5%
-width_main        = (1280/base_font_size_px)em
+colGutter         = 2%
+width_main        = (1366/base_font_size_px)em
 
 /////////////////////////////////////////////////////// RESET!
 @css {
@@ -218,12 +218,12 @@ body
   line-height: base_leading
   color: color_text
   background-color: color_bgr
-  @media only screen and (min-width: 1366px)
-    font-size: 125%
-  @media only screen and (min-width: 769px)
-    font-size: 112.5% // 18px
   @media only screen and (min-width: 480px)
     font-size: 100% // 16px
+  @media only screen and (min-width: 769px)
+    font-size: 112.5% // 18px
+  @media only screen and (min-width: 1366px)
+    font-size: 125% // 20px
 
 h1,h2,h3,h4,h5,h6
   font-family: font_heading
@@ -279,8 +279,6 @@ blockquote
 
 .centered-content
   text-align: center
-
-
 
 // prevent FOUT
 .wf-loading

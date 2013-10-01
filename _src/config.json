@@ -54,16 +54,16 @@
     },
 
     "disqus": {
-      "shortname": "my-name"
+      "shortname": "constantx"
     },
 
     "tweet_button": {
-      "via": "axiomzenteam"
+      "via": "constantx"
     }
   },
 
   "sitemap_generator": {
-    "url_root": "http://blog.axiomzen.com"
+    "url_root": "http://constantx.github.io"
   },
 
   "plugins": {

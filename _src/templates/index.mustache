@@ -1,29 +1,7 @@
 {{> header }}
-  <div class="container">
-    <div class="posts">
-      {{#recent_posts}}
-      <article class="hentry">
-
-        <h2 class="entry-title">
-          <a href="{{ permalink }}">{{{ title }}}</a>
-        </h2>
-
-        <div class="entry-content-wrapper">
-          <div class="entry-content entry-summary">
-            {{> post-meta }}
-
-            {{{ content }}}
-
-            {{#is_teaser}}
-            <p class="post-teaser-link">
-              <a href="{{ permalink }}" class="more">read full article</a>
-            </p>
-            {{/is_teaser}}
-          </div>
-        </div>
-      </article>
-      {{/recent_posts}}
-    </div>
-
+  <div class="posts">
+    {{#recent_posts}}
+    {{> post }}
+    {{/recent_posts}}
   </div>
 {{> footer }}

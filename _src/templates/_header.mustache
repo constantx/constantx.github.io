@@ -61,7 +61,7 @@
   {{#stylesheet_bundle}}/css/main.css{{/stylesheet_bundle}}
 
   {{! script vendor }}
-  <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
   {{! typekit? }}
   <script type="text/javascript" src="//use.typekit.net/tme8hga.js"></script>
@@ -78,35 +78,26 @@
   <header class='main-header'>
     <div class="container">
 
-      <h1>
-        <a class='logo' href="/" title="{{ site-title }} by {{ creator }}">{{{ site-title }}}</a>
-      </h1>
-
       <nav role="main_nav" class="main-nav">
         <div class="container">
           <ul class="main-nav-items">
-            <li class='main-nav-item'>
-              <a id="home" class="link_with_icon {{#current}}/{{/current}}" href="/">   {{! <span role="icon" aria-hidden="true" class="icon-home"></span> }}
-                <span role="title">Home</span>
+            {{#main-nav}}
+            <li class='main-nav-item {{#current}}{{{href}}}{{/current}}'>
+              <a id="{{{ id }}}" href="{{{ href }}}">
+                <span role="title">{{{ label }}}</span>
               </a>
             </li>
-
-            <li class='main-nav-item'>
-              <a id="about" class="link_with_icon {{#current}}/about{{/current}}" href="/about">
-                {{! <span role="icon" aria-hidden="true" class="icon-user"></span> }}
-                <span role="title">About</span>
-              </a>
-            </li>
-
-            <li class='main-nav-item'>
-              <a id="archive" class="link_with_icon {{#current}}/archive{{/current}}" href="/archive">
-                {{! <span role="icon" aria-hidden="true" class="icon-book"></span> }}
-                <span role="title">Archive</span>
-              </a>
-            </li>
+            {{/main-nav}}
           </ul>
         </div>
       </nav>
+
+      <h2>
+        <a class='logo' href="/" title="{{ site-title }} by {{ creator }}">
+          {{{ site-title }}}
+        </a>
+      </h2>
+
     </div>
   </header>
 
