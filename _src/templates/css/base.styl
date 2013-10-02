@@ -229,6 +229,8 @@ h1,h2,h3,h4,h5,h6
   font-family: font_heading
   font-weight: bold
   margin: 0
+  &.centered
+    text-align: center
 
 h1
   setHeading(3.375)
@@ -253,6 +255,10 @@ p, ul, ol
     transition: border-color 0.2s ease-in
     &:hover
       border-bottom-color: color_main_cool
+  em
+    font-style: italic
+  strong
+    font-weight: bold
 
 .heading
 strong
@@ -271,11 +277,6 @@ blockquote
 
 .circular
   border-radius: 50%
-
-.centered
-  display: inline-block
-  margin-left: auto
-  margin-right: auto
 
 .centered-content
   text-align: center
@@ -306,7 +307,7 @@ blockquote
   position: relative
   z-index: 1000
   background-color: color_light
-  padding: 1em 0
+  padding: 0 0 1em
   border-bottom: solid 1px color_border
 
 .main-nav
@@ -333,4 +334,3 @@ blockquote
   margin-top: 2em
   padding: 1em 0
   border-top: solid 1px color_border
-  background-color: color_light

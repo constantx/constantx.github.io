@@ -1,7 +1,7 @@
 ---
-title: constantx punch-blog styleguide
+title: writing again
 published: false
-cover: /img/2014-09-20-constantx-punch-blog-styleguide.jpg
+cover: /img/bgr-fi.jpg
 author:
   name: Truong Nguyen
   github: constantx
@@ -25,7 +25,7 @@ Lorem ipsum dolor sit amet, _consectetur adip isicing elit_, sed do eiusmodtempo
 > This is a blockquote. Lorem ipsum dolor sit amet, consectetur adip* isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
 
 ## Photos
-![cat? - by constantx](/img/2014-09-20-constantx-punch-blog-styleguide.jpg)
+![cat? - by constantx](/img/bgr-fi.jpg)
 
 ## Codeblock
 Punch-blog uses [Prism.js](http://prismjs.com/) for automatic syntax highlighting.
