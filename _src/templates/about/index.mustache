@@ -1,21 +1,22 @@
 {{> header }}
 
-<div class="main-content container">
-  <div class="hentry col col-8 offset-2">
-    <div class="entry-content">
-      {{{ bio }}}
+<div class="main-content">
+  <div class="container">
+    <div class="hentry col col-8 offset-2">
+      <div class="entry-content">
+        {{{ bio }}}
 
-      {{#site-author}}
-      <h3>Or you can find me on:</h3>
-      <p>
-        {{#social}}
-        <a href="{{url}}" target="_blank">
-          <i class="icon-{{icon}}"></i> {{title}}
-        </a>&nbsp;&nbsp;
-        {{/social}}
-      </p>
-      {{/site-author}}
-
+        {{#site-author}}
+        <h3>Or you can find me on:</h3>
+        <p>
+          {{#social}}
+          <a href="{{url}}" target="_blank">
+            <i class="icon-{{icon}}"></i> {{title}}
+          </a>&nbsp;&nbsp;
+          {{/social}}
+        </p>
+        {{/site-author}}
+      </div>
     </div>
   </div>
 </div>

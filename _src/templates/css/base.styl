@@ -215,7 +215,7 @@ body
   font-size: 100%
   line-height: base_leading
   color: color_text
-  background-color: color_bgr
+  background-color: color_light
   @media only screen and (min-width: 769px)
     font-size: 112.5% // 18px
   @media only screen and (min-width: 1024px)
@@ -297,9 +297,11 @@ blockquote
   text-align: center
   font-weight: normal
   color: color_text
-  setHeading(2.25)
-  @media only screen and (max-width: width_screen_medium)
-    setHeading(1.5)
+  setHeading(1.5)
+  @media only screen and (min-width: 769px)
+    setHeading(2.081)
+  @media only screen and (min-width: 1024px)
+    setHeading(2.25)
 
 .main-header
   position: relative
@@ -307,6 +309,9 @@ blockquote
   background-color: color_light
   padding: 0 0 1em
   border-bottom: solid 1px color_border
+
+.main-content
+  background-color: color_bgr
 
 .main-nav
   padding: 1em 0
