@@ -1,5 +1,5 @@
 ---
-title: writing again
+title: Writing Again
 published: false
 cover: /img/bgr-fi.jpg
 author:
@@ -11,7 +11,7 @@ tags:
 - reference
 ---
 
-This is a basic styleguide with all elements supported by my fork of punch-blog. You'll find heading, paragraph, strong, em, photo, codeblock, blockquote, photos.
+This is a styleguide with all elements supported within an article. You'll find heading, paragraph, strong, em, photo, codeblock, blockquote, photos.
 
 # Heading 1
 ## Heading 2
@@ -49,18 +49,12 @@ Code block highlighted via prism.js:
 ```
 
 ## Unordered list
-There are several other nifty features like that on Punch-blog. Here's a small list:
 
-* Preview posts, as you write them.
-* Easily publish to Amazon S3.
-* Pretty URLs for permalinks (no .html, configurable).
-* Responsive, customizable theme based on [HTML5Boilerplate](html5boilerplate.com) & [320andup framework](https://github.com/malarkey/320andup/).
-* Load fonts from multiple sources with [WebFonts Loader](https://github.com/typekit/webfontloader).
+* item 1
+* item 2
+* item 3
 
 ## Ordered list
-1. Manage other pages with Punch's default content handler.
-2. Extend the behavior by writing your own helpers.
-3. This is so sexy and awesome right?
-
-
-Happy Blogging!
+1. item 1
+2. item 2
+3. item 3

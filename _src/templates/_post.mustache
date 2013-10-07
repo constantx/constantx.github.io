@@ -1,5 +1,5 @@
 <article
-  class="hentry hentry-single hentry-{{#dasherize}}{{#downcase}}{{title}}{{/downcase}}{{/dasherize}}
+  class="hentry {{^is_teaser}}hentry-single{{/is_teaser}} hentry-{{#dasherize}}{{#downcase}}{{title}}{{/downcase}}{{/dasherize}}
   {{#cover}}hentry-has-cover{{/cover}}">
 
   <header class='container'>
@@ -17,16 +17,20 @@
 
   <div class="entry-content-wrapper">
     <div class="container">
-      <div class="entry-content offset-2 col col-8">
-        <aside class="entry-meta">
-          <span class="byline author vcard">Author: {{{name}}}&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-          <time class="published" datetime="{{#iso_date}}{{ published_date }}{{/iso_date}}" pubdate>{{#long_date}}{{published_date}}{{/long_date}}</time>
 
-          {{#author}}
-            <a href="//github.com/{{{github}}}" class="author-photo col col-2">
-              <img src="{{{avatar}}}" alt="" class='circular cover'>
+
+      <div class="entry-content col col-8 offset-2">
+
+        <aside class="entry-meta">
+          <span class="byline author vcard">
+            {{#author}}
+            <a href="//github.com/{{{github}}}">
+              Author: {{{name}}}
             </a>
-          {{/author}}
+            {{/author}}
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+          </span>
+          <time class="published" datetime="{{#iso_date}}{{ published_date }}{{/iso_date}}" pubdate>on {{#long_date}}{{published_date}}{{/long_date}}</time>
         </aside>
 
         {{{ content }}}
@@ -38,7 +42,9 @@
         {{/is_teaser}}
 
         {{^is_teaser}}
-          {{> post-social }}
+          {{! <aside class="social" role="social-media">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="constantx" data-related="cosntantx">Tweet</a>
+          </aside>}}
         {{/is_teaser}}
       </div>
     </div>

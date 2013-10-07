@@ -51,20 +51,16 @@
   <meta name="description" content="{{{site-description}}}">
 
   {{! VIEWPORT }}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1, initial-scale=1">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="/favicon.ico">
 
   {{! script vendor }}
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
-  {{! typekit? }}
-  {{#typekit}}
-  <script type="text/javascript" src="//use.typekit.net/{{ typekit }}.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  {{/typekit}}
+  {{{ typekit }}}
 
-  {{! google analytics? }}
   {{{ google_analytics_js }}}
 
   {{#stylesheet_bundle}}/css/main.css{{/stylesheet_bundle}}
@@ -82,7 +78,7 @@
           <ul class="main-nav-items">
             {{#main-nav}}
             <li class='main-nav-item {{#current}}{{{href}}}{{/current}}'>
-              <a id="{{{ id }}}" href="{{{ href }}}">
+              <a id="{{ id }}" href="{{ href }}">
                 <span role="title">{{{ label }}}</span>
               </a>
             </li>
@@ -92,7 +88,7 @@
       </nav>
 
       <h2>
-        <a class='logo' href="/" title="{{ site-title }} by {{ creator }}">
+        <a class='logo' href="/" title="{{{ site-title }}} by {{{ creator }}}">
           {{#page-title}}{{{ page-title }}}{{/page-title}}
           {{^page-title}}{{{ site-title }}}{{/page-title}}
         </a>

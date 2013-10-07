@@ -27,10 +27,10 @@
   },
 
   "blog": {
-    "posts_dir": "posts",
+    "posts_dir": "post",
     "post_format": "markdown",
     "post_url": "/post/{year}/{month}/{date}/{title}",
-    "teaser_length": 1,
+    "teaser_length": 2,
     "homepage_posts": 1,
 
     "archive_urls": {
@@ -46,6 +46,10 @@
     "ga": {
       "property_id": "UA-2383160-28",
       "domain": "constantx.com"
+    },
+
+    "typekit": {
+      "id": "tme8hga"
     },
 
     "disqus": {
@@ -71,7 +75,7 @@
       "feed_helper": "./helpers/feed_helper.js",
       "current_helper": "punch-current-page-helper",
       "thirdparty_snippets_helper": "punch-thirdparty-snippets-helper",
-      "punch-helper-google-analytics" : "punch-helper-google-analytics"
+      "punch-snippet-helpers" : "punch-snippet-helpers"
     },
 
     "generator_hooks": {

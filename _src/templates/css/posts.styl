@@ -1,12 +1,13 @@
 // push paragraph and list to the right side
 .hentry
   position: relative
+  background: color_bgr
 
   .entry-title
     @extend .heading
     position: relative
     z-index: 2000
-    setHeading(3.375)
+    setHeading(4.682)
     font-family: font_heading
     padding: 2em 0
     @media only screen and (max-width: 1366px)
@@ -59,21 +60,12 @@
 
 
   .entry-content
-    position: relative
-
-    // kick reading content to the one side
-    // p, blockquote, ul, ol, h1, h2, h3, h4, h5, h6, pre[class*="language-"], .post-meta, .post-social
-    //   @extend .offset-4
-    //   @media only screen and (max-width: 769px)
-    //     margin-left: 0
-
     pre[class*="language-"]
       margin-bottom: 2em
 
     h1, h2, h3, h4, h5, h6
       padding: 0.5em 0
-      font-family: font_serif
-      font-style: italic
+      font-family: font_sans
 
     p
       margin-bottom: 1em
@@ -94,29 +86,11 @@
     blockquote
       font-style: italic
       border-left: solid 0.5em color_meta
-      padding-left: 0.5em
+      padding-left: 0.25em
       p
-        margin-left: 10%
+        margin-left: 1em
 
-  .entry-author-photo
-    position: absolute
-    z-index: 2000
-    left: 0
-    top: 0
-    font-family: font_sans
-    color: color_meta
-    text-align: center
-    a
-      display: block
-
-    @media only screen and (max-width: 769px)
-      position: relative
-      width: 10em !important
-      max-width: 50%
-      margin-left: auto
-      margin-right: auto
-
-  .entry-social
+  .social
     padding-top: 0.5em
     border-top: solid 0.3em color_border
 

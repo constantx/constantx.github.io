@@ -82,9 +82,12 @@ module.exports = {
 	get: function(basepath, file_extension, options, callback){
 		var self = this;
 
-		if (!path_utils.matchPath(basepath, "^/index$")) {
-			return callback(null, {}, {}, null);
-		}
+		/**
+		 * let recent_posts tag available on all pages
+		 */
+		// if (!path_utils.matchPath(basepath, "^/index$")) {
+		// 	return callback(null, {}, {}, null);
+		// }
 
 		fetch_content(function() {
 			return callback(null, { "tag": tag_helpers }, {}, last_modified);
