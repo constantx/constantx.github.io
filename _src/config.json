@@ -30,7 +30,7 @@
     "posts_dir": "post",
     "post_format": "markdown",
     "post_url": "/post/{year}/{month}/{date}/{title}",
-    "teaser_length": 2,
+    "teaser_length": 1,
     "homepage_posts": 1,
 
     "archive_urls": {
