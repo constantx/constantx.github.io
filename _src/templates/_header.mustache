@@ -95,17 +95,15 @@
     <div class="container">
 
       <nav role="main_nav" class="main-nav">
-        <div class="container">
-          <ul class="main-nav-items">
-            {{#main-nav}}
-            <li class='main-nav-item {{#current}}{{{href}}}{{/current}}'>
-              <a id="{{ id }}" href="{{ href }}">
-                <span role="title">{{{ label }}}</span>
-              </a>
-            </li>
-            {{/main-nav}}
-          </ul>
-        </div>
+        <ul class="main-nav-items">
+          {{#main-nav}}
+          <li class='main-nav-item {{#current}}{{{href}}}{{/current}}'>
+            <a id="{{ id }}" href="{{ href }}">
+              <span role="title">{{{ label }}}</span>
+            </a>
+          </li>
+          {{/main-nav}}
+        </ul>
       </nav>
 
       <h2>
