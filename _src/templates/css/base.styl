@@ -297,7 +297,7 @@ blockquote
   text-align: center
   font-weight: normal
   color: color_text
-  setHeading(1.5)
+  setHeading(1.387)
   @media only screen and (min-width: 769px)
     setHeading(2.081)
   @media only screen and (min-width: 1024px)
@@ -320,17 +320,21 @@ blockquote
     text-align: center
   .main-nav-item
     font-size: 1em
-    margin: 0 1em
+    margin: 0 0.5em
     display: inline-block
     text-transform: uppercase
     letter-spacing: 0.1em
     a
+      border-bottom: none
       &:hover
         border-bottom: solid 5px color_main_cool
 
     &.current
       a
         border-bottom: solid 5px color_main
+
+    @media only screen and (min-width: 769px)
+      margin: 0 1em
 
 .main-footer
   @extend .centered-content
