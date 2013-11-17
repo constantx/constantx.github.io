@@ -1,8 +1,7 @@
 {
   "name": "constantx-github-io",
   "version": "1.0.0",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "underscore": ">= 1.4.2",
     "punch": ">= 0.5.35",
@@ -11,6 +10,7 @@
     "punch-thirdparty-snippets-helper": ">= 0.0.1",
     "punch-sitemap-generator": ">= 0.0.5",
     "punch-stylus-compiler": ">= 0.0.1",
-    "punch-snippet-helpers": ">=0.0.2"
+    "punch-snippet-helpers": ">=0.0.2",
+    "grunt": "~0.4.1"
   }
 }
