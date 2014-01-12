@@ -50,7 +50,7 @@ color_meta        = #ccd1d1
 color_border      = #e7e9e9
 
 // typography settings
-base_font_size_px = 22
+base_font_size_px = 16
 base_font_size    = (base_font_size_px/16*100)%
 base_leading      = 1.5
 
@@ -212,16 +212,14 @@ body
   margin: 0
   padding: 0
   font-family: font_text
-  font-size: 100%
+  font-size: base_font_size
   line-height: base_leading
   color: color_text
   background-color: color_light
   @media only screen and (min-width: 769px)
-    font-size: 112.5% // 18px
+    font-size: 112.5%
   @media only screen and (min-width: 1024px)
-    font-size: 125% // 20px
-  @media only screen and (min-width: 1366px)
-    font-size: base_font_size // 22px
+    font-size: 125%
 
 h1,h2,h3,h4,h5,h6
   font-family: font_heading
@@ -288,56 +286,3 @@ blockquote
 .wf-active
   h1,h2,h3,h5,h6,p,a
     visibility: visible
-
-/////////////////////////////////////////////////////// Common Layout Helpers
-.logo
-  display: block
-  padding: 1em 0
-  font-family: font_serif
-  text-align: center
-  font-weight: normal
-  color: color_text
-  setHeading(1.387)
-  @media only screen and (min-width: 769px)
-    setHeading(2.081)
-  @media only screen and (min-width: 1024px)
-    setHeading(2.25)
-
-.main-header
-  position: relative
-  z-index: 1000
-  background-color: color_light
-  padding: 0 0 1em
-  border-bottom: solid 1px color_border
-
-.main-content
-  background-color: color_bgr
-
-.main-nav
-  padding: 1em 0
-  .main-nav-items
-    list-style: none
-    text-align: center
-  .main-nav-item
-    font-size: 1em
-    margin: 0 0.5em
-    display: inline-block
-    text-transform: uppercase
-    a
-      border-bottom: none
-      &:hover
-        border-bottom: solid 5px color_main_cool
-
-    &.current
-      a
-        border-bottom: solid 5px color_main
-
-    @media only screen and (min-width: 769px)
-      margin: 0 1em
-      letter-spacing: 0.1em
-
-.main-footer
-  @extend .centered-content
-  background-color: color_light
-  padding: 1em 0
-  border-top: solid 1px color_border

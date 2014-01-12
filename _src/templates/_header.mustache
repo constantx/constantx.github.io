@@ -94,6 +94,14 @@
   <header class='main-header'>
     <div class="container">
 
+
+      <h1>
+        <a class='logo' href="/" title="{{{ site-title }}} by {{{ creator }}}">
+          {{#page-title}}{{{ page-title }}}{{/page-title}}
+          {{^page-title}}{{{ site-title }}}{{/page-title}}
+        </a>
+      </h1>
+
       <nav role="main_nav" class="main-nav">
         <ul class="main-nav-items">
           {{#main-nav}}
@@ -105,13 +113,6 @@
           {{/main-nav}}
         </ul>
       </nav>
-
-      <h2>
-        <a class='logo' href="/" title="{{{ site-title }}} by {{{ creator }}}">
-          {{#page-title}}{{{ page-title }}}{{/page-title}}
-          {{^page-title}}{{{ site-title }}}{{/page-title}}
-        </a>
-      </h2>
 
     </div>
   </header>

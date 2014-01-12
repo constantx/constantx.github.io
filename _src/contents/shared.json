@@ -26,24 +26,24 @@
 
   "main-nav": [
     {
-      "id": "home",
-      "label": "home",
-      "href": "/"
-    },
-    {
-      "id": "posts",
-      "label": "posts",
-      "href": "/posts"
-    },
-    {
       "id": "about",
       "label": "about",
-      "href": "\/about"
+      "href": "/about"
+    },
+    {
+      "id": "writing",
+      "label": "writing",
+      "href": "https://medium.com/@constantx"
     },
     {
       "id": "work",
       "label": "Work",
       "href": "http://portfolio.constantx.com"
+    },
+    {
+      "id": "code",
+      "label": "code",
+      "href": "http://github.com/constantx"
     }
   ]
 }

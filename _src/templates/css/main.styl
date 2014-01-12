@@ -5,4 +5,58 @@
 body
   border-top: solid 1em color_main
 
+/////////////////////////////////////////////////////// Common Layout Helpers
+.logo
+  display: block
+  padding: 1em 0
+  font-family: font_serif
+  text-align: center
+  font-weight: normal
+  color: color_text
+  setHeading(1.387)
+  @media only screen and (min-width: 769px)
+    setHeading(2.081)
+  @media only screen and (min-width: 1024px)
+    setHeading(2.25)
+
+.main-header
+  position: relative
+  z-index: 1000
+  background-color: color_light
+  padding: 0 0 1em
+
+.main-content
+  padding: 1em 0
+  background-color: color_bgr
+
+.main-nav
+  padding: 1em 0
+  .main-nav-items
+    list-style: none
+    text-align: center
+  .main-nav-item
+    margin: 0 0.5em
+    display: inline-block
+    text-transform: uppercase
+    a
+      font-size: 1em
+      font-family: font_sans
+      border-bottom: none
+      &:hover
+        color: color_main
+        border-bottom: solid 5px color_main
+
+    &.current
+      a
+        border-bottom: solid 5px color_main
+
+    @media only screen and (min-width: 769px)
+      margin: 0 1em
+      letter-spacing: 0.05em
+
+.main-footer
+  @extend .centered-content
+  background-color: color_light
+  padding: 1em 0
+
 @import "posts"
