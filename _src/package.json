@@ -7,10 +7,8 @@
     "punch": "~0.5.44",
     "punch-blog-content-handler": ">= 0.0.9",
     "punch-current-page-helper": ">= 0.0.1",
-    "punch-thirdparty-snippets-helper": ">= 0.0.1",
     "punch-sitemap-generator": ">= 0.0.5",
     "punch-stylus-compiler": "0.0.1",
-    "punch-snippet-helpers": ">=0.0.2",
     "matchdep": "~0.3.0",
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
@@ -25,6 +23,7 @@
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-concurrent": "~0.3.0",
     "grunt-component-build": "~0.4.2",
-    "grunt-shell": "~0.6.3"
+    "grunt-shell": "~0.6.3",
+    "punch-thirdparty-snippets-helper": "git+https://git@github.com/constantx/punch-thirdparty-snippets-helper.git"
   }
 }

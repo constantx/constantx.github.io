@@ -106,10 +106,10 @@
 
       shell: {
         punch_server: {
-          command: "./node_modules/punch/bin/punch server"
+          command: "./node_modules/punch/bin/punch s"
         },
         punch_generate: {
-          command: "./node_modules/punch/bin/punch generate"
+          command: "./node_modules/punch/bin/punch g"
         }
       },
 
