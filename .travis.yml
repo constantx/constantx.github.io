@@ -9,7 +9,7 @@ branches:
     - master
 env:
   global:
-    secure: ""
+    secure: "ohWfJwDyhVlrsEQKnObHhk/tOis1ZhhOjPhYaymkQF5I9lQkDSER+bMeg+YZElI/1I7M3WNHXkB1Xd6Gh1uVEtISMkfplzuSUtqKAYNkSVIaa3szrEzFdaTU8eaqLyv43ghLNaZdyrakjV11x0P4rJ/0HcKu2t8Ac+mbdS5hKWA="
 
 before_script:
 # install packages
