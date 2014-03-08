@@ -20,7 +20,7 @@
   },
 
   "blog": {
-    "posts_dir": "post",
+    "posts_dir": "posts",
     "post_format": "markdown",
     "post_url": "/post/{year}/{month}/{date}/{title}",
     "teaser_length": 1,
