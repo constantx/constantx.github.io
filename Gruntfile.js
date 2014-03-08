@@ -106,10 +106,12 @@
 
       shell: {
         punch_server: {
-          command: "./node_modules/punch/bin/punch s"
+          command: "./node_modules/punch/bin/punch s",
+          logConcurrentOutput: true
         },
         punch_generate: {
-          command: "./node_modules/punch/bin/punch g"
+          command: "./node_modules/punch/bin/punch g",
+          logConcurrentOutput: true
         }
       },
 
