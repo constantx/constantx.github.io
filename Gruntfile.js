@@ -71,14 +71,14 @@
         }
       },
 
-      watch: {
+      "watch": {
         gruntfile: {
           files: "<%= jshint.gruntfile.src %>",
           tasks: ["jshint:gruntfile"]
         }
       },
 
-      concurrent: {
+      "concurrent": {
         dev: {
           tasks: ["watch", "shell:punchServer"],
           options: {
