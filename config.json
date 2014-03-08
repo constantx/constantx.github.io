@@ -8,8 +8,8 @@
   },
 
   "bundles": {
-    "/css/main.css": [
-      "/css/main.styl"
+    "css/main.css": [
+      "css/main.styl"
     ]
   },
 
@@ -56,7 +56,7 @@
   },
 
   "sitemap_generator": {
-    "url_root": "http://constantx.github.io"
+    "url_root": "http://constantx.com"
   },
 
   "plugins": {
