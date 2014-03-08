@@ -1,0 +1,31 @@
+---
+language: node_js
+
+node_js:
+  - "0.10"
+
+branches:
+  only:
+    - master
+env:
+  global:
+    secure: ""
+
+before_script:
+# install packages
+  - npm install
+  - npm install grunt-cli
+# compile app
+  - ./node_modules/.bin/grunt build
+
+notifications:
+  email:
+    recipients:
+      - constantx@gmail.com
+    on_success: change
+    on_failure: always
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then ./node_modules/.bin/grunt travis; fi
+
+## # celebrate

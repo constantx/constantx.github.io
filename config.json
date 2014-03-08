@@ -1,17 +1,17 @@
 {
-	"template_dir": "templates",
-	"content_dir": "contents",
-	"output_dir": "../",
+  "template_dir": "templates",
+  "content_dir": "contents",
+  "output_dir": "build",
 
-	"server": {
-		"port": 5000
-	},
+  "server": {
+    "port": 5000
+  },
 
-	"bundles": {
-		"/css/main.css": [
-			"/css/main.styl"
-		]
-	},
+  "bundles": {
+    "/css/main.css": [
+      "/css/main.styl"
+    ]
+  },
 
   "generator": {
     "skip_paths": [
@@ -72,7 +72,8 @@
     },
 
     "generator_hooks": {
-      "sitemap_generator_hook": "punch-sitemap-generator"
+      "sitemap_generator_hook": "punch-sitemap-generator",
+      "cname_hook": "./helpers/cname_hook.js"
     },
 
     "compilers": {

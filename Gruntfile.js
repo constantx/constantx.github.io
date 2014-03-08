@@ -7,43 +7,15 @@
 
     // Project configuration.
     grunt.initConfig({
+
+
       // Metadata.
-      pkg: grunt.file.readJSON('package.json'),
+      pkg: grunt.file.readJSON("package.json"),
+
 
       app: {
-        name: "<%= pkg.name %>",
-        www: "./templates"
-      },
-
-
-      banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
-        '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-        '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-        '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-        ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
-
-
-      // Task configuration.
-      concat: {
-        options: {
-          banner: '<%= banner %>',
-          stripBanners: true
-        },
-        dist: {
-          src: ['lib/<%= pkg.name %>.js'],
-          dest: 'dist/<%= pkg.name %>.js'
-        }
-      },
-
-
-      uglify: {
-        options: {
-          banner: '<%= banner %>'
-        },
-        dist: {
-          src: '<%= concat.dist.dest %>',
-          dest: 'dist/<%= pkg.name %>.min.js'
-        }
+        www: "./templates",
+        built: "./build"
       },
 
 
@@ -68,71 +40,47 @@
         },
         gruntfile: {
           src: 'Gruntfile.js'
-        },
-        lib_test: {
-          src: ['lib/**/*.js', 'test/**/*.js']
-        },
-        www: {
-          src: ['<%= app.www %>/js/**/*.js']
         }
       },
 
 
-      qunit: {
-        files: ['test/**/*.html']
-      },
-
-
-      clean: {
-        plugins: ['plugins'],
-        platforms: ['platforms']
-      },
-
-
-      componentbuild: {
-        dev: {
-          options: {
-            dev: true,
-            sourceUrls: true
-          },
-          src: './',
-          dest: '<%= app.www %>/build'
+      "shell": {
+        options: {
+          stdout: true
         },
-        dist: {
-          src: './',
-          dest: '<%= app.www %>/build'
+        punchServer: {
+          command: "./node_modules/punch/bin/punch s"
+        },
+        punchGenerate: {
+          command: "./node_modules/punch/bin/punch g"
         }
       },
 
-      shell: {
-        punch_server: {
-          command: "./node_modules/punch/bin/punch s",
-          logConcurrentOutput: true
-        },
-        punch_generate: {
-          command: "./node_modules/punch/bin/punch g",
-          logConcurrentOutput: true
+
+      "gh-pages": {
+        src: ["**/*"],
+        options: {
+          base: "build",
+          repo: "https://" + process.env.GH_TOKEN + "@github.com/constantx/constantx.github.io.git",
+          silent: true,
+          branch: "gh-pages",
+          user: {
+            name: "Truong Nguyen",
+            email: "constantx@gmail.com"
+          }
         }
       },
 
       watch: {
         gruntfile: {
           files: "<%= jshint.gruntfile.src %>",
-          tasks: ['jshint:gruntfile']
-        },
-        lib_test: {
-          files: "<%= jshint.lib_test.src %>",
-          tasks: ['jshint:lib_test', 'qunit']
-        },
-        www: {
-          files: "<%= jshint.www.src %>",
-          tasks: ['jshint:www', 'componentbuild:dev']
+          tasks: ["jshint:gruntfile"]
         }
       },
 
       concurrent: {
         dev: {
-          tasks: ['watch', 'shell:punch_server'],
+          tasks: ["watch", "shell:punchServer"],
           options: {
             logConcurrentOutput: true
           }
@@ -140,29 +88,31 @@
       }
     });
 
+
     // These plugins provide necessary tasks.
-    require('matchdep').filterAll('grunt-*').forEach(grunt.loadNpmTasks);
-
-
-    grunt.registerTask('build', [
-      'jshint',
-      'qunit',
-      'concat',
-      'uglify'
-    ]);
+    require("matchdep").filterAll([
+      "grunt-*",
+      "!grunt-cli"
+    ]).forEach(grunt.loadNpmTasks);
 
 
     // Default task.
-    grunt.registerTask('default', [
-      'jshint',
-      'componentbuild:dev',
-      'concurrent:dev'
+    grunt.registerTask("default", [
+      "jshint",
+      "concurrent:dev"
     ]);
 
-    grunt.registerTask('build', [
-      'jshint',
-      'componentbuild:dist',
-      'shell:punch_generate'
+
+    // build task
+    grunt.registerTask("build", [
+      "jshint",
+      "shell:punchGenerate",
+    ]);
+
+
+    // publish to gh-pages
+    grunt.registerTask("travis", "build and push to gh-pages", [
+      "gh-pages"
     ]);
   };
 

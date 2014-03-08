@@ -66,7 +66,7 @@ font_meta         = "Panic Sans", inconsolata, Monaco, 'Courier New', monospace
 
 // grid settings
 numCol            = 1..12
-colGutter         = 2%
+colGutter         = 3%
 width_main        = (1366/base_font_size_px)em
 
 /////////////////////////////////////////////////////// RESET!
@@ -131,7 +131,7 @@ width_main        = (1366/base_font_size_px)em
 _calcLeading(target_leading, fontSize)
   result = target_leading/fontSize
   if result < 1
-    result = _calcLeading(target_leading + (base_leading/2), fontSize)
+    result = _calcLeading(target_leading + (base_leading/3), fontSize)
   else
     return result
 
