@@ -8,8 +8,8 @@
   },
 
   "bundles": {
-    "css/main.css": [
-      "css/main.styl"
+    "/css/main.css": [
+      "/css/main.styl"
     ]
   },
 
