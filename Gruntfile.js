@@ -15,7 +15,7 @@
 
       app: {
         www: "./templates",
-        built: "./build"
+        dist: "./dist"
       },
 
 
@@ -60,7 +60,7 @@
       "gh-pages": {
         src: ["**/*"],
         options: {
-          base: "build",
+          base: "dist",
           repo: "https://" + process.env.GH_TOKEN + "@github.com/constantx/constantx.github.io.git",
           silent: true,
           branch: "gh-pages",
