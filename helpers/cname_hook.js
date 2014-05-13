@@ -16,7 +16,7 @@ module.exports = {
         encoding: "utf8"
       })
       .pipe(
-        fs.createWriteStream('./build/CNAME', {
+        fs.createWriteStream('./dist/CNAME', {
           encoding: "utf8"
         })
       );
