@@ -1,3 +1,5 @@
+@import "nib"
+
 /* Modular Scale
 
 ----------------------
@@ -51,7 +53,7 @@ base_font_size_px = 18
 base_font_size    = (base_font_size_px/16*100)%
 base_leading      = 1.6
 
-tk_text           = "skolar"
+tk_text           = "ff-tisa-web-pro"
 tk_heading        = "faricy-new-web"
 
 font_serif        = tk_text, Georgia, serif
@@ -59,7 +61,8 @@ font_sans         = tk_heading, Helvetica, Arial, sans-serif
 
 font_text         = font_serif
 font_heading      = font_sans
-font_meta         = "Panic Sans", inconsolata, Monaco, 'Courier New', monospace
+font_meta         = "Panic Sans", Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Lucida Console", "DejaVu Sans Mono", Monaco, "Courier New", Courier, monospace;
+
 
 // grid settings
 numCol            = 1..12
@@ -203,6 +206,44 @@ for num in numCol
     .offset-{num}
       margin-left: 0
 
+
+/////////////////////////////////////////////////////// Common Layout Helpers
+.has-ligature
+  -moz-font-feature-settings: "liga=1, dlig=1"
+  -ms-font-feature-settings: "liga", "dlig"
+  -o-font-feature-settings: "liga", "dlig"
+  -webkit-font-feature-settings: "liga", "dlig"
+  font-feature-settings: "liga", "dlig"
+
+.cover
+  width: 100%
+  height: auto
+
+.circular
+  border-radius: 50%
+
+.centered-content
+  text-align: center
+
+.centered-block
+  margin-left: auto
+  margin-right: auto
+
+.amp
+  font-style: italic
+  font-family: "Baskerville", font_serif
+
+// prevent FOUT
+.wf-loading
+  h1,h2,h3,h5,h6,p,a
+    visibility: hidden
+
+.wf-inactive
+.wf-active
+  h1,h2,h3,h5,h6,p,a
+    visibility: visible
+
+
 /////////////////////////////////////////////////////// Base Typography
 
 body
@@ -213,6 +254,10 @@ body
   line-height: base_leading
   color: color_text
   background-color: color_light
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: subpixel-antialiased
+  @media only screen and (max-device-width : 480px)
+    text-rendering: optimizeSpeed
   @media only screen and (min-width: 769px)
     font-size: 112.5%
   @media only screen and (min-width: 1024px)
@@ -222,6 +267,7 @@ h1,h2,h3,h4,h5,h6
   font-family: font_heading
   font-weight: bold
   margin: 0
+  @extend .has-ligature
   &.centered
     text-align: center
 
@@ -241,6 +287,7 @@ h6
 a
   color: color_text
   text-decoration: none
+  @extend .has-ligature
 
 p, ul, ol
   a
@@ -253,6 +300,10 @@ p, ul, ol
   strong
     font-weight: bold
 
+p
+  text-rendering: optimizeLegibility
+  @extend .has-ligature
+
 .heading
 strong
   font-weight: bold
@@ -261,25 +312,3 @@ blockquote
   margin-left: 0
   margin-right: 0
   position: relative
-
-/////////////////////////////////////////////////////// Common Layout Helpers
-
-.cover
-  width: 100%
-  height: auto
-
-.circular
-  border-radius: 50%
-
-.centered-content
-  text-align: center
-
-// prevent FOUT
-.wf-loading
-  h1,h2,h3,h5,h6,p,a
-    visibility: hidden
-
-.wf-inactive
-.wf-active
-  h1,h2,h3,h5,h6,p,a
-    visibility: visible

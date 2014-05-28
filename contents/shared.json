@@ -2,27 +2,37 @@
   "site-title": "&ldquo;T.&rdquo; Nguyen",
 
   "site-author": {
-    "name": "Truong &ldquo;T&rdquo; Nguyen",
-
-    "gravatar_url": "https:\/\/0.gravatar.com\/avatar\/bdd22ad361650cddb58011e5d301e67b?d=https%3A%2F%2Fidenticons.github.com%2F78111570a7c73234b9c1d28182759030.png&s=420",
-
-    "social": [
-      {
-        "id": "twitter",
-        "title": "Twitter",
-        "desc": "@constantx",
-        "icon": "twitter",
-        "url": "http:\/\/twitter.com\/constantx"
-      },
-      {
-        "id": "github",
-        "title": "GitHub",
-        "desc": "@consantx",
-        "icon": "github",
-        "url": "http:\/\/github.com\/constantx"
-      }
-    ]
+    "name": "T. Nguyen"
   },
+
+  "tagline": "designer <span class='amp'>&</span> hacker",
+
+  "social": [
+    {
+      "type": "dribbble",
+      "title": "dribbble",
+      "icon": "typcn typcn-social-dribbble",
+      "href": "https://dribbble.com/constantx"
+    },
+    {
+      "type": "github",
+      "title": "GitHub",
+      "icon": "typcn typcn-social-github",
+      "href": "https://github.com/constantx"
+    },
+    {
+      "type": "linkedin",
+      "title": "LinkedIn",
+      "icon": "typcn typcn-social-linkedin",
+      "href": "https://www.linkedin.com/in/constantx"
+    },
+    {
+      "type": "twitter",
+      "title": "Twitter",
+      "icon": "typcn typcn-social-twitter",
+      "href": "https://twitter.com/constantx"
+    }
+  ],
 
   "main-nav": [
     {

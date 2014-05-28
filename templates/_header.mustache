@@ -10,15 +10,15 @@
 
   {{! for specific page }}
   {{#page-title}}
-    <title>{{{ site-title }}} | {{{ page-title }}}</title>
-    <meta property="og:title" content="{{{ site-title }}} {{{ page-title }}}" />
+    <title>{{{ site-title }}}</title>
+    <meta property="og:title" content="{{{ site-title }}}" />
   {{/page-title}}
 
   {{! if not a page }}
   {{^page-title}}
     {{! then it could be a post }}
     {{#title}}
-    <title>{{{ site-title }}} | {{{ title }}}</title>
+    <title>{{{ site-title }}}</title>
     <meta property="og:title" content="{{{ site-title }}} {{{ title }}}" />
     {{/title}}
 
@@ -93,28 +93,8 @@
 
   <header class='main-header'>
     <div class="container">
-
-
-      <h1>
-        <a class='logo' href="/" title="{{{ site-title }}} by {{{ creator }}}">
-          {{#page-title}}{{{ page-title }}}{{/page-title}}
-          {{^page-title}}{{{ site-title }}}{{/page-title}}
-        </a>
+      <h1 class="tagline">
+        {{#tagline}}{{{ tagline }}}{{/tagline}}
       </h1>
-
-      <nav role="main_nav" class="main-nav">
-        <ul class="main-nav-items">
-          {{#main-nav}}
-          <li class='main-nav-item {{#current}}{{{href}}}{{/current}}'>
-            <a id="{{ id }}" href="{{ href }}">
-              <span role="title">{{{ label }}}</span>
-            </a>
-          </li>
-          {{/main-nav}}
-        </ul>
-      </nav>
-
     </div>
   </header>
-
-

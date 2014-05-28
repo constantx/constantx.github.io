@@ -91,8 +91,7 @@
 
     // These plugins provide necessary tasks.
     require("matchdep").filterAll([
-      "grunt-*",
-      "!grunt-cli"
+      "grunt-*"
     ]).forEach(grunt.loadNpmTasks);
 
 
