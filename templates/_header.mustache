@@ -75,7 +75,8 @@
   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png">
 
-
+  {{! main stylesheet }}
+  {{#stylesheet_bundle}}/css/main.css{{/stylesheet_bundle}}
 
   {{! script vendor }}
   {{! <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> }}
@@ -84,7 +85,6 @@
 
   {{{ google_analytics_snippet }}}
 
-  {{#stylesheet_bundle}}/css/main.css{{/stylesheet_bundle}}
 </head>
 <body>
   <!--[if lt IE 7]>
