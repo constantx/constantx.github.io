@@ -1,6 +1,6 @@
 {
   "sandbox": [
-    "vendors/pixi.dev.js",
-    "day-1"
+    { "script": "vendors/pixi.dev" },
+    { "script": "sandbox/day-1" }
   ]
 }
