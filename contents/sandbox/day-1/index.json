@@ -1,0 +1,6 @@
+{
+  "sandbox": [
+    "vendors/pixi.dev.js",
+    "day-1"
+  ]
+}
