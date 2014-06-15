@@ -109,7 +109,6 @@
 
     // publish to gh-pages
     grunt.registerTask("travis", "build and push to gh-pages", [
-      "build",
       "gh-pages"
     ]);
   };
