@@ -6,6 +6,7 @@ branches:
   - master
 before_script:
 - npm install grunt-cli
+- ./node_modules/.bin/grunt build
 notifications:
   email:
     recipients:
