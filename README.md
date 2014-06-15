@@ -1,2 +1,0 @@
-# http://constantx.github.io
-
