@@ -52,7 +52,7 @@
           command: "./node_modules/punch/bin/punch s"
         },
         punchGenerate: {
-          command: "./node_modules/punch/bin/punch g --blank"
+          command: "./node_modules/punch/bin/punch g"
         }
       },
 
@@ -90,9 +90,7 @@
 
 
     // These plugins provide necessary tasks.
-    require("matchdep").filterAll([
-      "grunt-*"
-    ]).forEach(grunt.loadNpmTasks);
+    require("matchdep").filterAll(["grunt-*"]).forEach(grunt.loadNpmTasks);
 
 
     // Default task.
