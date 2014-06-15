@@ -15,6 +15,7 @@ notifications:
 after_success:
 - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then
   ./node_modules/.bin/grunt travis; fi
+skip_cleanup: true
 env:
   global:
     secure: LB9oDVE5WhtwO0EC+LlNRWj9aGu/kulSq5gOxvytedDvfKPOETpT8faSDBWJGDM8o3A9F7Z/gcBmRkc2JsKbD6FMOokgQ7b6XSz9j2jHISM+Z2DczPSw55Ga2KRueGoZOcupKz89QKKv3wb/PURiILdb+ifIA5CfHXnZnW3YKsY=
