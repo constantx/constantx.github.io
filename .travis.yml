@@ -4,7 +4,7 @@ node_js:
 branches:
   only:
   - master
-install:
+before_script:
 - npm install grunt-cli
 notifications:
   email:
