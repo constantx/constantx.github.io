@@ -1,7 +1,7 @@
 {
-  "template_dir": "./templates",
-  "content_dir": "./contents",
-  "output_dir": "./dist",
+  "template_dir": "templates",
+  "content_dir": "contents",
+  "output_dir": "dist",
 
   "server": {
     "port": 5000
@@ -26,7 +26,6 @@
     "post_url": "/post/{year}/{month}/{date}/{title}",
     "teaser_length": 1,
     "homepage_posts": 1,
-
     "archive_urls": {
       "all": "/archive",
       "year": "/{year}",
