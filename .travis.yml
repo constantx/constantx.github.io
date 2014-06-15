@@ -1,30 +1,21 @@
----
 language: node_js
-
 node_js:
-  - "0.10"
-
+- '0.10'
 branches:
   only:
-    - master
-env:
-  global:
-    secure: "ohWfJwDyhVlrsEQKnObHhk/tOis1ZhhOjPhYaymkQF5I9lQkDSER+bMeg+YZElI/1I7M3WNHXkB1Xd6Gh1uVEtISMkfplzuSUtqKAYNkSVIaa3szrEzFdaTU8eaqLyv43ghLNaZdyrakjV11x0P4rJ/0HcKu2t8Ac+mbdS5hKWA="
-
+  - master
 before_script:
-# install packages
-  - npm install grunt-cli
-# compile app
-  - ./node_modules/.bin/grunt build
-
+- npm install grunt-cli
+- ./node_modules/.bin/grunt build
 notifications:
   email:
     recipients:
-      - constantx@gmail.com
+    - constantx@gmail.com
     on_success: change
     on_failure: always
-
 after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then ./node_modules/.bin/grunt travis; fi
-
-## # celebrate
+- if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then
+  ./node_modules/.bin/grunt travis; fi
+env:
+  global:
+    secure: LB9oDVE5WhtwO0EC+LlNRWj9aGu/kulSq5gOxvytedDvfKPOETpT8faSDBWJGDM8o3A9F7Z/gcBmRkc2JsKbD6FMOokgQ7b6XSz9j2jHISM+Z2DczPSw55Ga2KRueGoZOcupKz89QKKv3wb/PURiILdb+ifIA5CfHXnZnW3YKsY=
