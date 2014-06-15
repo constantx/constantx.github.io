@@ -1,7 +1,7 @@
 {
-  "template_dir": "templates",
-  "content_dir": "contents",
-  "output_dir": "dist",
+  "template_dir": "./templates",
+  "content_dir": "./contents",
+  "output_dir": "./dist",
 
   "server": {
     "port": 5000
