@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-- '0.10.28'
+  - '0.10.28'
 branches:
   only:
   - master
 before_script:
-- npm install grunt-cli
-- ./node_modules/.bin/grunt build
+  - npm install grunt-cli
+  - ./node_modules/.bin/grunt build
 notifications:
   email:
     recipients:
@@ -14,8 +14,7 @@ notifications:
     on_success: change
     on_failure: always
 after_success:
-- if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then
-  ./node_modules/.bin/grunt travis; fi
+  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then ./node_modules/.bin/grunt travis; fi
 skip_cleanup: true
 env:
   global:
