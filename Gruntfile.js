@@ -52,7 +52,7 @@
           command: "./node_modules/punch/bin/punch s"
         },
         punchGenerate: {
-          command: "./node_modules/punch/bin/punch g"
+          command: "./node_modules/punch/bin/punch g --blank"
         }
       },
 
