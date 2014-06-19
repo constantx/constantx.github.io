@@ -9,6 +9,12 @@
 
   "social": [
     {
+      "type": "portfolio",
+      "title": "portfolio",
+      "icon": "typcn typcn-starburst-outline",
+      "href": "http://cargocollective.com/constantx"
+    },
+    {
       "type": "dribbble",
       "title": "dribbble",
       "icon": "typcn typcn-social-dribbble",
