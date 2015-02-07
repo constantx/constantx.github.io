@@ -1,5 +1,5 @@
 node_modules/
-build/
+dist/
 
 # Compiled source #
 ###################
@@ -58,3 +58,4 @@ npm-debug.log
 dist/
 .grunt
 bootstrap
+this.sublime-workspace
