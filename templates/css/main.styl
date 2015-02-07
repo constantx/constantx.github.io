@@ -1,4 +1,5 @@
 @import "nib"
+@import "var"
 @import "base"
 
 html
@@ -12,6 +13,16 @@ body
   background: black url('../img/cover.jpg') center bottom no-repeat
   background-size: cover
   overflow: hidden
+  color: color_light
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,0.8)
+
   @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 640px), (min-resolution: 192dpi)
     background: url('../img/cover@2x.jpg') center bottom no-repeat
     background-size: cover
@@ -34,31 +45,24 @@ body
   @media only screen and (min-width: 1024px)
     setHeading(5.425)
 
-
-.page-bio
-  @extend .has-shadow
-  text-align: center
-  p
-    color: color_light
-    @extend .has-shadow
-
 .main-header
   position: relative
-  z-index: 1000
+  z-index: 100
   padding: 7em 0 1em
 
-
 .main-content
+  // keep main-content with a z-index to stay above the background screen
+  position: relative
+  z-index: 100
   &:before
     @extend .wander
     content: ""
     display: block
     width: 100%
     height: 1px
-    background-color: color_dark
+    background: color_main
 
-
-.main-nav
+.nav
   padding: 1em 0
 
   .nav-items
@@ -67,7 +71,6 @@ body
 
   .nav-item
     display: inline-block
-    text-transform: uppercase
 
   .item-link
     border-bottom: none
@@ -85,8 +88,7 @@ body
       margin: 0 1em
       letter-spacing: 0.05em
 
-  &.social
-    padding-top: 2em
+  &.nav-social
     .nav-item-link
       @extend .has-shadow
       color: color_light
@@ -97,6 +99,20 @@ body
   left: 0
   right: 0
   z-index: 2
+
+
+.section-bio
+  @extend .has-shadow
+  p
+    color: color_light
+    @extend .has-shadow
+
+
+.section-social
+  .nav-social
+  .nav-items
+    display: inline
+
 
 #sanbox-container
   display: flex

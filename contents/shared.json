@@ -10,13 +10,13 @@
   "social": [
     {
       "type": "portfolio",
-      "title": "portfolio",
+      "title": "Portfolio",
       "icon": "typcn typcn-starburst-outline",
       "href": "http://cargocollective.com/constantx"
     },
     {
       "type": "dribbble",
-      "title": "dribbble",
+      "title": "Dribbble",
       "icon": "typcn typcn-social-dribbble",
       "href": "https://dribbble.com/constantx"
     },
@@ -40,7 +40,7 @@
     }
   ],
 
-  "main-nav": [
+  "nav-main": [
     {
       "id": "about",
       "label": "about",

@@ -19,15 +19,11 @@ setHeading(fontSize)
 
 body
   font-family: font_text
-  font-size: 100%
+  font-size: base_font_size_px
   line-height: base_leading
   font-variant-ligatures: common-ligatures
-  @media only screen and (min-width: 769px)
-    font-size: 112.5% // 18px
   @media only screen and (min-width: 1024px)
-    font-size: 125% // 18px
-  @media only screen and (min-width: 1366px)
-    font-size: base_font_size // 20px
+    font-size: (14/base_font_size_px)px
 
 h1,h2,h3,h4,h5,h6
   font-family: font_heading
@@ -46,7 +42,6 @@ h5
   setHeading(1)
 h6
   setHeading(0.925)
-
 
 strong
   font-weight: bold
