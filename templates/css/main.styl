@@ -1,19 +1,16 @@
 @import "nib"
-@import "partials/base"
-@import "partials/animate"
+@import "base"
 
 html
   height: 100%
   min-height: 30em
 
 body
-  box-sizing: border-box
   position: relative
   height: 100%
   border-top: solid 1em color_main
   background: black url('../img/cover.jpg') center bottom no-repeat
   background-size: cover
-  font-variant-ligatures: common-ligatures
   overflow: hidden
   @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 640px), (min-resolution: 192dpi)
     background: url('../img/cover@2x.jpg') center bottom no-repeat
@@ -27,7 +24,6 @@ body
 .tagline
   display: block
   padding: 0.5em 0
-  font-family: font_sans
   text-align: center
   font-weight: normal
   color: color_light
@@ -42,9 +38,9 @@ body
 .page-bio
   @extend .has-shadow
   text-align: center
-  color: color_light
-  font-size: 12px
-  font-family: font_meta
+  p
+    color: color_light
+    @extend .has-shadow
 
 .main-header
   position: relative
@@ -65,42 +61,35 @@ body
 .main-nav
   padding: 1em 0
 
-  .main-nav-items
+  .nav-items
     list-style: none
     text-align: center
 
-  .main-nav-item
-    margin: 0 0.5em
+  .nav-item
     display: inline-block
     text-transform: uppercase
 
-    .item-link
-      font-size: 1em
-      border-bottom: none
-      &:hover
-        color: color_main
-        border-bottom: solid 5px color_main
-        margin-bottom: -5px
+  .item-link
+    border-bottom: none
+    &:hover
+      color: color_main
+      border-bottom: solid 5px color_main
+      margin-bottom: -5px
 
-    &.current
-      .item-link
-        border-bottom: solid 5px color_main
-        margin-bottom: -5px
+  &.current
+    .item-link
+      border-bottom: solid 5px color_main
+      margin-bottom: -5px
 
     @media only screen and (min-width: 769px)
       margin: 0 1em
       letter-spacing: 0.05em
 
   &.social
-    padding: 0
-
-    .item-link
+    padding-top: 2em
+    .nav-item-link
       @extend .has-shadow
       color: color_light
-      font-size: 1.5em
-      opacity: 0.5
-      &:hover
-        opacity: 1
 
 .main-footer
   position: absolute

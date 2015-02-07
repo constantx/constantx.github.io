@@ -1,0 +1,57 @@
+// this is a recursive function
+// it calculates the leading for a targeted line-height
+// if target_leading is less then one normal line for that fontSize
+// it'll try to add an extra half line via base_leading
+_calcLeading(target_leading, fontSize)
+  result = target_leading/fontSize
+  if result < 1
+    result = _calcLeading(target_leading + (base_leading/2), fontSize)
+  else
+    return result
+
+setHeading(fontSize)
+  font-size: (fontSize)em
+  line-height: _calcLeading(base_leading, fontSize)
+
+/*======================================*\
+  BASE TYPOGRAPHY
+\*======================================*/
+
+body
+  font-family: font_text
+  font-size: 100%
+  line-height: base_leading
+  font-variant-ligatures: common-ligatures
+  @media only screen and (min-width: 769px)
+    font-size: 112.5% // 18px
+  @media only screen and (min-width: 1024px)
+    font-size: 125% // 18px
+  @media only screen and (min-width: 1366px)
+    font-size: base_font_size // 20px
+
+h1,h2,h3,h4,h5,h6
+  font-family: font_heading
+  font-weight: bold
+  margin: 0
+
+h1
+  setHeading(3.375)
+h2
+  setHeading(2.081)
+h3
+  setHeading(1.5)
+h4
+  setHeading(1.387)
+h5
+  setHeading(1)
+h6
+  setHeading(0.925)
+
+
+strong
+  font-weight: bold
+
+blockquote
+  margin-left: 0
+  margin-right: 0
+  position: relative

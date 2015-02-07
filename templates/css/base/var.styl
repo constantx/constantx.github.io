@@ -35,8 +35,8 @@ Pixels  Ems Ems @ 16  % of 13
 1.716 0.095 0.107 13.200
 1.421 0.079 0.089 10.931
 1.073 0.06  0.067 8.254
-*/
 
+*/
 color_main        = #f25e5c
 color_main_cool   = #4bb4d9
 color_light       = #fff
@@ -45,3 +45,30 @@ color_dark        = #2a2a2a
 color_bgr         = #f9f9f9
 color_meta        = #ccd1d1
 color_border      = #e7e9e9
+
+/*************************************************
+ * TYPOGRAPHY SETTINGS
+ *************************************************/
+base_font_size_px = 12
+base_font_size    = (base_font_size_px/16*100)%
+base_leading      = 1.5
+
+tk_text           = "ff-tisa-web-pro"
+tk_heading        = "faricy-new-web"
+
+font_serif        = tk_text, Georgia, serif
+font_sans         = tk_heading, Helvetica, Arial, sans-serif
+
+font_meta         = "Panic Sans", Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Lucida Console", "DejaVu Sans Mono", Monaco, "Courier New", Courier, monospace
+font_text         = font_meta
+font_heading      = font_sans
+
+
+/*************************************************
+ * GRID SETTING
+ *************************************************/
+baseFontSize   = (base_font_size_px/16*100)%
+numColMax      = 12
+numCol         = 1..numColMax
+colGutter      = 1.5%
+widthContainer = (1366/base_font_size_px)em

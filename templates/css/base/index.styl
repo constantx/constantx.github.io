@@ -1,0 +1,112 @@
+@import 'reset'
+@import 'var'
+@import 'typography'
+@import 'grid'
+@import 'animate'
+
+/////////////////////////////////////////////////////// Common Layout Helpers
+.has-ligature
+  -moz-font-feature-settings: "liga=1, dlig=1"
+  -ms-font-feature-settings: "liga", "dlig"
+  -o-font-feature-settings: "liga", "dlig"
+  -webkit-font-feature-settings: "liga", "dlig"
+  font-feature-settings: "liga", "dlig"
+
+.cover
+  width: 100%
+  height: auto
+
+.circular
+  border-radius: 50%
+
+.centered-content
+  text-align: center
+
+.centered-block
+  margin-left: auto
+  margin-right: auto
+
+.amp
+  font-style: italic
+  font-family: "Baskerville", font_serif
+
+// prevent FOUT
+.wf-loading
+  h1,h2,h3,h5,h6,p,a
+    visibility: hidden
+
+.wf-inactive
+.wf-active
+  h1,h2,h3,h5,h6,p,a
+    visibility: visible
+
+
+/////////////////////////////////////////////////////// Base Typography
+
+body
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: font_meta
+  font-size: base_font_size
+  line-height: base_leading
+  color: color_text
+  background-color: color_light
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: subpixel-antialiased
+  @media only screen and (max-device-width : 480px)
+    text-rendering: optimizeSpeed
+  @media only screen and (min-width: 769px)
+    font-size: 112.5%
+  @media only screen and (min-width: 1024px)
+    font-size: 125%
+
+h1,h2,h3,h4,h5,h6
+  font-family: font_heading
+  font-weight: bold
+  margin: 0
+  @extend .has-ligature
+  &.centered
+    text-align: center
+
+h1
+  setHeading(3.375)
+h2
+  setHeading(2.081)
+h3
+  setHeading(1.5)
+h4
+  setHeading(1.387)
+h5
+  setHeading(1)
+h6
+  setHeading(0.925)
+
+a
+  color: color_text
+  text-decoration: none
+  @extend .has-ligature
+
+p, ul, ol
+  a
+    border-bottom: solid 2px color_main
+    transition: border-color 0.2s ease-in
+    &:hover
+      border-bottom-color: color_main_cool
+  em
+    font-style: italic
+  strong
+    font-weight: bold
+
+p
+  text-rendering: optimizeLegibility
+  @extend .has-ligature
+
+.heading
+strong
+  font-weight: bold
+
+blockquote
+  margin-left: 0
+  margin-right: 0
+  position: relative
