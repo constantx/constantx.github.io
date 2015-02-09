@@ -7,6 +7,9 @@ html
   min-height: 30em
 
 body
+  box-sizing: border-box
+  margin: 0
+  padding: 0
   position: relative
   height: 100%
   border-top: solid 1em color_main
@@ -14,6 +17,7 @@ body
   background-size: cover
   overflow: hidden
   color: color_light
+  background-color: color_light
   &:after
     content: ""
     position: absolute
@@ -26,10 +30,6 @@ body
   @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 640px), (min-resolution: 192dpi)
     background: url('../img/cover@2x.jpg') center bottom no-repeat
     background-size: cover
-
-/////////////////////////////////////////////////////// Helpers
-.has-shadow
-  text-shadow: .05em .05em 0.02em rgba(0,0,0,0.5)
 
 /////////////////////////////////////////////////////// MAIN
 .tagline
@@ -104,7 +104,6 @@ body
 .section-bio
   @extend .has-shadow
   p
-    color: color_light
     @extend .has-shadow
 
 

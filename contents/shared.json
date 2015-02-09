@@ -8,12 +8,6 @@
   "tagline": "designer <span class='amp'>&</span> hacker",
 
   "social": [{
-    "type": "portfolio",
-    "title": "cargocollective",
-    "icon": "typcn typcn-starburst-outline",
-    "href": "http://cargocollective.com/constantx",
-    "last": false
-  }, {
     "type": "dribbble",
     "title": "dribbble",
     "icon": "typcn typcn-social-dribbble",
@@ -36,6 +30,12 @@
     "title": "twitter",
     "icon": "typcn typcn-social-twitter",
     "href": "https://twitter.com/constantx",
+    "last": false
+  }, {
+    "type": "portfolio",
+    "title": "and an outdated cargo",
+    "icon": "typcn typcn-starburst-outline",
+    "href": "http://cargocollective.com/constantx",
     "last": true
   }],
 
