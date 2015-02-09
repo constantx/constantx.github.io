@@ -7,38 +7,37 @@
 
   "tagline": "designer <span class='amp'>&</span> hacker",
 
-  "social": [
-    {
-      "type": "portfolio",
-      "title": "Portfolio",
-      "icon": "typcn typcn-starburst-outline",
-      "href": "http://cargocollective.com/constantx"
-    },
-    {
-      "type": "dribbble",
-      "title": "Dribbble",
-      "icon": "typcn typcn-social-dribbble",
-      "href": "https://dribbble.com/constantx"
-    },
-    {
-      "type": "github",
-      "title": "GitHub",
-      "icon": "typcn typcn-social-github",
-      "href": "https://github.com/constantx"
-    },
-    {
-      "type": "linkedin",
-      "title": "LinkedIn",
-      "icon": "typcn typcn-social-linkedin",
-      "href": "https://www.linkedin.com/in/constantx"
-    },
-    {
-      "type": "twitter",
-      "title": "Twitter",
-      "icon": "typcn typcn-social-twitter",
-      "href": "https://twitter.com/constantx"
-    }
-  ],
+  "social": [{
+    "type": "portfolio",
+    "title": "cargocollective",
+    "icon": "typcn typcn-starburst-outline",
+    "href": "http://cargocollective.com/constantx",
+    "last": false
+  }, {
+    "type": "dribbble",
+    "title": "dribbble",
+    "icon": "typcn typcn-social-dribbble",
+    "href": "https://dribbble.com/constantx",
+    "last": false
+  }, {
+    "type": "github",
+    "title": "github",
+    "icon": "typcn typcn-social-github",
+    "href": "https://github.com/constantx",
+    "last": false
+  }, {
+    "type": "linkedin",
+    "title": "linkedin",
+    "icon": "typcn typcn-social-linkedin",
+    "href": "https://www.linkedin.com/in/constantx",
+    "last": false
+  }, {
+    "type": "twitter",
+    "title": "twitter",
+    "icon": "typcn typcn-social-twitter",
+    "href": "https://twitter.com/constantx",
+    "last": true
+  }],
 
   "nav-main": [
     {
