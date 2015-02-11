@@ -14,7 +14,7 @@ notifications:
     on_success: change
     on_failure: always
 after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then ./node_modules/.bin/grunt travis; fi
+  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then NODE_ENV=production ./node_modules/.bin/grunt travis; fi
 skip_cleanup: true
 env:
   global:
