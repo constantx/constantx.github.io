@@ -1,0 +1,10 @@
+<div class='section-social'>
+  You can find him on
+  <nav class="nav nav-social">
+    <ul class="nav-items">
+      {{#social}}
+      <a href="{{href}}" class="nav-item-link" target="_blank" title="{{title}}">{{title}}</a>{{^last}},{{/last}}{{#last}}.{{/last}}
+      {{/social}}
+    </ul>
+  </nav>
+</div>

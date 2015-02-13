@@ -3,9 +3,8 @@
 (function () {
   "use strict";
 
-  module.exports = function(grunt) {
 
-    // Project configuration.
+  module.exports = function(grunt) {
     grunt.initConfig({
 
 
@@ -13,9 +12,9 @@
       pkg: grunt.file.readJSON("package.json"),
 
 
-      app: {
-        www: "./templates",
-        dist: "./dist"
+      dirs: {
+        dist: "./dist",
+        public: "./public"
       },
 
 
@@ -44,15 +43,101 @@
       },
 
 
-      "shell": {
+      connect: {
+        server: {
+          options: {
+            port: 5001,
+            // hostname: 'localhost',
+            base: "<%= dirs.dist %>",
+            keepalive: true,
+            debug: process.env.NODE_ENV === 'development'
+          }
+        }
+      },
+
+
+      metalsmith: {
+        'dist': {
+          options: {
+            "metadata": require('./config'),
+            "plugins": {
+              "metalsmith-drafts": {},
+              "metalsmith-filemetadata": [{
+                "pattern": "posts/*",
+                "metadata": {
+                  "type": "post"
+                }
+              }, {
+                "pattern": "experiments/*",
+                "metadata": {
+                  "type": "experiment"
+                }
+              }],
+              "metalsmith-collections": {
+                recentPosts: {
+                  pattern: "posts/*.md",
+                  limit: 10
+                },
+                recentExperiments: {
+                  pattern: "experiments/*.md",
+                  limit: 10
+                }
+              },
+              "metalsmith-markdown": {
+                gfm: true,
+                smartypants: true,
+                tables: true
+              },
+              "metalsmith-permalinks": {
+                "pattern": "posts/:date/:title",
+                "relative": false
+              },
+              "metalsmith-static": {
+                "src": "./public",
+                "dest": "./"
+              },
+              "metalsmith-in-place": {
+                "engine": "mustache"
+              },
+              "metalsmith-layouts": {
+                "engine": "mustache",
+                "directory": "./layouts",
+                "partials": {
+                  footer: './_footer',
+                  header: './_header',
+                  social: './_social',
+                  recents: './_recents'
+                }
+              },
+            }
+          },
+          "src": "./content",
+          "dest": "<%= dirs.dist %>"
+        }
+      },
+
+
+      stylus: {
         options: {
-          stdout: true
+          // directories to scan for @import directives when parsing
+          paths: [
+            'stylus'
+          ]
         },
-        punchServer: {
-          command: "./node_modules/punch/bin/punch s"
-        },
-        punchGenerate: {
-          command: "./node_modules/punch/bin/punch g"
+        dist: {
+          options: {
+            compress: (process.env.NODE_ENV !== 'development'),
+            linenos: (process.env.NODE_ENV === 'development')
+          },
+          files: [{
+            expand: true,
+            cwd: './stylus',
+            src: [
+              'main.styl'
+            ],
+            dest: '<%= dirs.public %>/css/',
+            ext: '.css'
+          }]
         }
       },
 
@@ -60,7 +145,7 @@
       "gh-pages": {
         src: ["**/*"],
         options: {
-          base: "dist",
+          base: "<%= dirs.dist %>",
           repo: "https://" + process.env.GH_TOKEN + "@github.com/constantx/constantx.github.io.git",
           silent: true,
           branch: "gh-pages",
@@ -74,13 +159,24 @@
       "watch": {
         gruntfile: {
           files: "<%= jshint.gruntfile.src %>",
-          tasks: ["jshint:gruntfile"]
+          tasks: ["jshint"]
+        },
+        build: {
+          files: [
+            "<%= stylus.dist.files[0].cwd %>/**/*",
+            "./config.js",
+            "./layouts/**/*",
+            "./content/**/*",
+            "./public/**/*",
+            "!./public/**/*.css"
+          ],
+          tasks: ["build"]
         }
       },
 
       "concurrent": {
         dev: {
-          tasks: ["watch", "shell:punchServer"],
+          tasks: ["watch", "connect"],
           options: {
             logConcurrentOutput: true
           }
@@ -92,23 +188,23 @@
     // These plugins provide necessary tasks.
     require("matchdep").filterAll(["grunt-*"]).forEach(grunt.loadNpmTasks);
 
-
     // Default task.
     grunt.registerTask("default", [
-      "jshint",
+      "build",
       "concurrent:dev"
     ]);
-
 
     // build task
     grunt.registerTask("build", [
       "jshint",
-      "shell:punchGenerate"
+      "stylus",
+      "metalsmith"
     ]);
 
 
     // publish to gh-pages
     grunt.registerTask("travis", "build and push to gh-pages", [
+      "build",
       "gh-pages"
     ]);
   };

@@ -1,6 +1,0 @@
-{
-  "sandbox": [
-    { "script": "vendors/pixi.dev" },
-    { "script": "sandbox/week-1" }
-  ]
-}
