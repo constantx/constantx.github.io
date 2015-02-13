@@ -11,13 +11,11 @@ body
   margin: 0
   padding: 0
   position: relative
-  height: 100%
+  min-height: 100%
   border-top: solid 1em color_main
-  background: black url('../img/cover.jpg') center bottom no-repeat
-  background-size: cover
-  overflow: hidden
   color: color_light
-  background-color: color_light
+  background: black url('../img/cover.jpg') center center fixed no-repeat
+  background-size: cover
   &:after
     content: ""
     position: absolute
@@ -28,18 +26,18 @@ body
     background: rgba(0,0,0,0.8)
 
   @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 640px), (min-resolution: 192dpi)
-    background: url('../img/cover@2x.jpg') center bottom no-repeat
-    background-size: cover
+    background-image: url('../img/cover@2x.jpg')
 
 /////////////////////////////////////////////////////// MAIN
 .tagline
-  display: block
+  @extend .has-shadow
+  setHeading(2.56)
   padding: 0.5em 0
   text-align: center
   font-weight: normal
   color: color_light
-  @extend .has-shadow
-  setHeading(2.56)
+  max-width: 100%
+
   @media only screen and (min-width: 769px)
     setHeading(4.096)
   @media only screen and (min-width: 1024px)
@@ -49,11 +47,7 @@ body
   position: relative
   z-index: 100
   padding: 7em 0 1em
-
-.main-content
-  // keep main-content with a z-index to stay above the background screen
-  position: relative
-  z-index: 100
+  overflow: hidden
   &:before
     @extend .wander
     content: ""
@@ -61,6 +55,12 @@ body
     width: 100%
     height: 1px
     background: color_main
+
+.main-content
+  // keep main-content with a z-index to stay above the background screen
+  position: relative
+  z-index: 100
+  padding-bottom: 2em
 
 .nav
   padding: 1em 0
