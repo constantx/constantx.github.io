@@ -1,8 +1,20 @@
+
+  </section>
+  {{!-- end .main-content section --}}
+
   <footer class="main-footer"></footer>
+
+  {{!-- blog post only scripts --}}
+  {{#isPost}}
+  <script src="/js/vendors/prism.js"></script>
+  {{/isPost}}
+
+  {{!-- experiments only scripts --}}
+  {{#isExperiment}}
+  {{/isExperiment}}
 
   {{#scripts}}
   <script src="/js/{{{.}}}.js"></script>
   {{/scripts}}
-
 </body>
 </html>

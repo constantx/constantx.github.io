@@ -1,21 +1,23 @@
 // push paragraph and list to the right side
 .hentry
   position: relative
+  color: color_text
 
   .entry-title
     @extend .heading
+    // setHeading(4.682)
     position: relative
+    text-align: center
     z-index: 2000
-    setHeading(4.682)
     font-family: font_heading
-    padding: 2em 0
-    @media only screen and (max-width: 1366px)
-      setHeading(3.375)
-    @media only screen and (max-width: 769px)
-      text-align: center
-      setHeading(3.122)
-    @media only screen and (max-width: 480px)
-      setHeading(2.25)
+    padding: 4em 0
+    // @media only screen and (max-width: 1366px)
+    //   setHeading(3.375)
+    // @media only screen and (max-width: 769px)
+    //   text-align: center
+    //   setHeading(3.122)
+    // @media only screen and (max-width: 480px)
+    //   setHeading(2.25)
 
   .entry-cover
     position: absolute
@@ -29,6 +31,16 @@
     img
       width: 100%
       height: auto
+
+    // semi-transparent screen on photo
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba(0,0,0,0.5)
 
   .entry-meta
     font-family: font_sans
@@ -65,6 +77,10 @@
     h1, h2, h3, h4, h5, h6
       padding: 0.5em 0
       font-family: font_sans
+
+    h1
+      border-top: solid 1px color_border
+      margin-top: 0.5em
 
     p
       margin-bottom: 1em
@@ -111,3 +127,8 @@
     &:last-child
       border-bottom: none
       margin-bottom: 0
+
+// override prism font-family
+code[class*="language-"]
+pre[class*="language-"]
+  font-family: inherit !important

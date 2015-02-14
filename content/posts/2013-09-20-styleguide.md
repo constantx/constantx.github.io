@@ -1,6 +1,6 @@
 ---
 title: Styleguide
-cover: /img/bgr-fi.jpg
+cover: /img/cover.jpg
 layout: post.mustache
 date: 2013-09-20
 author:
@@ -26,7 +26,7 @@ Lorem ipsum dolor sit amet, _consectetur adip isicing elit_, sed do eiusmodtempo
 > This is a blockquote. Lorem ipsum dolor sit amet, consectetur adip* isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
 
 ## Photos
-![cat? - by constantx](/img/bgr-fi.jpg)
+![cat? - by constantx](/img/cover.jpg)
 
 ## Codeblock
 Punch-blog uses [Prism.js](http://prismjs.com/) for automatic syntax highlighting.
@@ -49,13 +49,15 @@ Code block highlighted via prism.js:
   }
 ```
 
-## Unordered list
+## List
+
+### Unordered
 
 * item 1
 * item 2
 * item 3
 
-## Ordered list
+### Ordered
 1. item 1
 2. item 2
 3. item 3

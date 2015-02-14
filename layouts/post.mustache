@@ -1,13 +1,13 @@
 {{> header }}
 
+
 <article
-  class="hentry {{^is_teaser}}hentry-single{{/is_teaser}} hentry-{{#dasherize}}{{#downcase}}{{title}}{{/downcase}}{{/dasherize}}
-  {{#cover}}hentry-has-cover{{/cover}}">
+  class="hentry hentry-single {{#cover}}hentry-has-cover{{/cover}}">
 
   <header class='container'>
-    <h2 class="entry-title">
+    <h1 class="entry-title">
       <a href="{{ permalink }}">{{ title }}</a>
-    </h2>
+    </h1>
   </header>
 
   {{! NOTE: cover url is also used in open graph meta tag }}
@@ -62,6 +62,5 @@
   -->
 
 </article>
-
 
 {{> footer }}

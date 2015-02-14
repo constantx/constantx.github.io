@@ -65,12 +65,12 @@
               "metalsmith-filemetadata": [{
                 "pattern": "posts/*",
                 "metadata": {
-                  "type": "post"
+                  "isPost": true
                 }
               }, {
                 "pattern": "experiments/*",
                 "metadata": {
-                  "type": "experiment"
+                  "isExperiment": true
                 }
               }],
               "metalsmith-collections": {
