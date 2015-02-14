@@ -4,9 +4,13 @@ var stage = new PIXI.Stage(0xfdfdfd);
 // create a renderer instance.
 var renderer = PIXI.autoDetectRenderer(400, 300, null, true, true);
 
-// add the renderer view element to the DOM's #sandbox
-var container = document.getElementById("sandbox");
+// add the renderer view element to the DOM's #experiments
+var container = document.getElementById("experiments");
+
+// add the renderer view element to the DOM
 container.appendChild(renderer.view);
+
+requestAnimFrame(animate);
 
 // create a texture from an image path
 var texture = PIXI.Texture.fromImage("/img/bunny.png");
@@ -23,11 +27,12 @@ bunny.position.y = 150;
 
 stage.addChild(bunny);
 
-requestAnimFrame( animate );
-
 function animate() {
 
     requestAnimFrame( animate );
+
+    // just for fun, lets rotate mr rabbit a little
+    bunny.rotation += 0.1;
 
     // render the stage
     renderer.render(stage);
