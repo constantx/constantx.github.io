@@ -1,5 +1,5 @@
 
-/* line 160 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 159 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 
 /* line 1 : /Users/constantx/projects/constantx/constantx.com/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
 
@@ -765,22 +765,21 @@ blockquote {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  padding: 0 5%;
-  width: 96%;
+  width: 90%;
   max-width: 73.14285714285714em;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 74 : /Users/constantx/projects/constantx/constantx.com/stylus/base/grid.styl */
+/* line 73 : /Users/constantx/projects/constantx/constantx.com/stylus/base/grid.styl */
 
-/* line 77 : /Users/constantx/projects/constantx/constantx.com/stylus/base/grid.styl */
+/* line 76 : /Users/constantx/projects/constantx/constantx.com/stylus/base/grid.styl */
 .row {
   margin-left: -5%;
   margin-right: -5%;
 }
 
-/* line 82 : /Users/constantx/projects/constantx/constantx.com/stylus/base/grid.styl */
+/* line 81 : /Users/constantx/projects/constantx/constantx.com/stylus/base/grid.styl */
 .col {
   float: left;
   -webkit-box-sizing: border-box;
@@ -792,18 +791,18 @@ blockquote {
   min-height: 1px;
 }
 
-/* line 84 : /Users/constantx/projects/constantx/constantx.com/stylus/base/grid.styl */
+/* line 83 : /Users/constantx/projects/constantx/constantx.com/stylus/base/grid.styl */
 .col.centered {
   float: none;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 87 : /Users/constantx/projects/constantx/constantx.com/stylus/base/grid.styl */
+/* line 86 : /Users/constantx/projects/constantx/constantx.com/stylus/base/grid.styl */
 
 /* line 541 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 
-/* line 24 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 23 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 ._1 {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
@@ -812,7 +811,7 @@ blockquote {
   animation-delay: 0.1s;
 }
 
-/* line 24 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 23 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 ._2 {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
@@ -821,7 +820,7 @@ blockquote {
   animation-delay: 0.2s;
 }
 
-/* line 24 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 23 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 ._3 {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
@@ -830,7 +829,7 @@ blockquote {
   animation-delay: 0.3s;
 }
 
-/* line 24 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 23 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 ._4 {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
@@ -839,7 +838,7 @@ blockquote {
   animation-delay: 0.4s;
 }
 
-/* line 24 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 23 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 ._5 {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
@@ -848,7 +847,7 @@ blockquote {
   animation-delay: 0.5s;
 }
 
-/* line 24 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 23 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 ._6 {
   -webkit-animation-delay: 0.6s;
   -moz-animation-delay: 0.6s;
@@ -857,7 +856,7 @@ blockquote {
   animation-delay: 0.6s;
 }
 
-/* line 24 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 23 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 ._7 {
   -webkit-animation-delay: 0.7s;
   -moz-animation-delay: 0.7s;
@@ -866,7 +865,7 @@ blockquote {
   animation-delay: 0.7s;
 }
 
-/* line 24 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 23 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 ._8 {
   -webkit-animation-delay: 0.8s;
   -moz-animation-delay: 0.8s;
@@ -875,7 +874,7 @@ blockquote {
   animation-delay: 0.8s;
 }
 
-/* line 24 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 23 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 ._9 {
   -webkit-animation-delay: 0.9s;
   -moz-animation-delay: 0.9s;
@@ -884,7 +883,7 @@ blockquote {
   animation-delay: 0.9s;
 }
 
-/* line 24 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 23 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 ._10 {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
@@ -893,7 +892,7 @@ blockquote {
   animation-delay: 1s;
 }
 
-/* line 114 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 113 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   -moz-animation-name: fadeInUp;
@@ -902,7 +901,7 @@ blockquote {
   animation-name: fadeInUp;
 }
 
-/* line 116 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 115 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   -moz-animation-name: fadeInDown;
@@ -911,7 +910,7 @@ blockquote {
   animation-name: fadeInDown;
 }
 
-/* line 119 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 118 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 .fadeOutUp {
   -webkit-animation-name: fadeOutUp;
   -moz-animation-name: fadeOutUp;
@@ -920,7 +919,7 @@ blockquote {
   animation-name: fadeOutUp;
 }
 
-/* line 121 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 120 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 .fadeOutDown {
   -webkit-animation-name: fadeOutDown;
   -moz-animation-name: fadeOutDown;
@@ -929,7 +928,7 @@ blockquote {
   animation-name: fadeOutDown;
 }
 
-/* line 124 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 123 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 .slideInUp {
   -webkit-animation-name: slideInUp;
   -moz-animation-name: slideInUp;
@@ -938,7 +937,7 @@ blockquote {
   animation-name: slideInUp;
 }
 
-/* line 126 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 125 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 .slideInDown {
   -webkit-animation-name: slideInDown;
   -moz-animation-name: slideInDown;
@@ -947,7 +946,7 @@ blockquote {
   animation-name: slideInDown;
 }
 
-/* line 129 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 128 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   -moz-animation-name: slideOutUp;
@@ -956,7 +955,7 @@ blockquote {
   animation-name: slideOutUp;
 }
 
-/* line 131 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 130 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 .slideOutDown {
   -webkit-animation-name: slideOutDown;
   -moz-animation-name: slideOutDown;
@@ -965,14 +964,14 @@ blockquote {
   animation-name: slideOutDown;
 }
 
-/* line 134 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 133 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 .wander,
-.main-header:before {
-  -webkit-animation: wander 30s ease-in-out 0.3s infinite alternate;
-  -moz-animation: wander 30s ease-in-out 0.3s infinite alternate;
-  -o-animation: wander 30s ease-in-out 0.3s infinite alternate;
-  -ms-animation: wander 30s ease-in-out 0.3s infinite alternate;
-  animation: wander 30s ease-in-out 0.3s infinite alternate;
+.tagline:before {
+  -webkit-animation: wander 60s ease-in-out 0.3s infinite alternate;
+  -moz-animation: wander 60s ease-in-out 0.3s infinite alternate;
+  -o-animation: wander 60s ease-in-out 0.3s infinite alternate;
+  -ms-animation: wander 60s ease-in-out 0.3s infinite alternate;
+  animation: wander 60s ease-in-out 0.3s infinite alternate;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -990,30 +989,27 @@ blockquote {
     -o-transform: rotate(0) translate3d(0, 0, 0);
     -ms-transform: rotate(0) translate3d(0, 0, 0);
     transform: rotate(0) translate3d(0, 0, 0);
-    opacity: 0.2;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: alpha(opacity=20);
-  }
-
-/* line 7 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
-  50% {
-    -webkit-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -moz-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -o-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -ms-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    transform: rotate(360deg) translate3d(100%, 100%, 50em);
     opacity: 0.5;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=50);
   }
 
-/* line 10 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 7 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+  50% {
+    -webkit-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -moz-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -o-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -ms-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    transform: rotate(360deg) translate3d(50%, 50%, 0);
+  }
+
+/* line 9 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
-    -webkit-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -moz-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -o-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -ms-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
+    -webkit-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -moz-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -o-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -ms-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    transform: rotate(-360deg) translate3d(-50%, -50%, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -1030,30 +1026,27 @@ blockquote {
     -o-transform: rotate(0) translate3d(0, 0, 0);
     -ms-transform: rotate(0) translate3d(0, 0, 0);
     transform: rotate(0) translate3d(0, 0, 0);
-    opacity: 0.2;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: alpha(opacity=20);
-  }
-
-/* line 7 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
-  50% {
-    -webkit-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -moz-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -o-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -ms-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    transform: rotate(360deg) translate3d(100%, 100%, 50em);
     opacity: 0.5;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=50);
   }
 
-/* line 10 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 7 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+  50% {
+    -webkit-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -moz-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -o-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -ms-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    transform: rotate(360deg) translate3d(50%, 50%, 0);
+  }
+
+/* line 9 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
-    -webkit-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -moz-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -o-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -ms-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
+    -webkit-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -moz-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -o-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -ms-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    transform: rotate(-360deg) translate3d(-50%, -50%, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -1070,30 +1063,27 @@ blockquote {
     -o-transform: rotate(0) translate3d(0, 0, 0);
     -ms-transform: rotate(0) translate3d(0, 0, 0);
     transform: rotate(0) translate3d(0, 0, 0);
-    opacity: 0.2;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: alpha(opacity=20);
-  }
-
-/* line 7 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
-  50% {
-    -webkit-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -moz-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -o-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -ms-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    transform: rotate(360deg) translate3d(100%, 100%, 50em);
     opacity: 0.5;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=50);
   }
 
-/* line 10 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 7 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+  50% {
+    -webkit-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -moz-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -o-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -ms-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    transform: rotate(360deg) translate3d(50%, 50%, 0);
+  }
+
+/* line 9 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
-    -webkit-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -moz-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -o-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -ms-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
+    -webkit-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -moz-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -o-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -ms-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    transform: rotate(-360deg) translate3d(-50%, -50%, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -1110,40 +1100,37 @@ blockquote {
     -o-transform: rotate(0) translate3d(0, 0, 0);
     -ms-transform: rotate(0) translate3d(0, 0, 0);
     transform: rotate(0) translate3d(0, 0, 0);
-    opacity: 0.2;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: alpha(opacity=20);
-  }
-
-/* line 7 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
-  50% {
-    -webkit-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -moz-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -o-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    -ms-transform: rotate(360deg) translate3d(100%, 100%, 50em);
-    transform: rotate(360deg) translate3d(100%, 100%, 50em);
     opacity: 0.5;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=50);
   }
 
-/* line 10 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 7 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+  50% {
+    -webkit-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -moz-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -o-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    -ms-transform: rotate(360deg) translate3d(50%, 50%, 0);
+    transform: rotate(360deg) translate3d(50%, 50%, 0);
+  }
+
+/* line 9 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
-    -webkit-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -moz-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -o-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    -ms-transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
-    transform: rotate(-360deg) translate3d(-100%, -100%, -50em);
+    -webkit-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -moz-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -o-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    -ms-transform: rotate(-360deg) translate3d(-50%, -50%, 0);
+    transform: rotate(-360deg) translate3d(-50%, -50%, 0);
     opacity: 1;
     -ms-filter: none;
     filter: none;
   }
 }
 
-/* line 30 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 29 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-moz-keyframes fadeInUp {
 
-/* line 31 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 30 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1155,7 +1142,7 @@ blockquote {
     transform: translateY(1em);
   }
 
-/* line 34 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 33 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1168,10 +1155,10 @@ blockquote {
   }
 }
 
-/* line 30 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 29 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-webkit-keyframes fadeInUp {
 
-/* line 31 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 30 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1183,7 +1170,7 @@ blockquote {
     transform: translateY(1em);
   }
 
-/* line 34 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 33 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1196,10 +1183,10 @@ blockquote {
   }
 }
 
-/* line 30 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 29 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-o-keyframes fadeInUp {
 
-/* line 31 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 30 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1211,7 +1198,7 @@ blockquote {
     transform: translateY(1em);
   }
 
-/* line 34 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 33 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1224,10 +1211,10 @@ blockquote {
   }
 }
 
-/* line 30 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 29 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @keyframes fadeInUp {
 
-/* line 31 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 30 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1239,7 +1226,7 @@ blockquote {
     transform: translateY(1em);
   }
 
-/* line 34 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 33 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1252,10 +1239,10 @@ blockquote {
   }
 }
 
-/* line 46 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 45 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-moz-keyframes fadeInUp {
 
-/* line 47 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 46 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1267,7 +1254,7 @@ blockquote {
     transform: translateY(20px);
   }
 
-/* line 50 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 49 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1280,10 +1267,10 @@ blockquote {
   }
 }
 
-/* line 46 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 45 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-webkit-keyframes fadeInUp {
 
-/* line 47 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 46 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1295,7 +1282,7 @@ blockquote {
     transform: translateY(20px);
   }
 
-/* line 50 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 49 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1308,10 +1295,10 @@ blockquote {
   }
 }
 
-/* line 46 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 45 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-o-keyframes fadeInUp {
 
-/* line 47 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 46 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1323,7 +1310,7 @@ blockquote {
     transform: translateY(20px);
   }
 
-/* line 50 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 49 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1336,10 +1323,10 @@ blockquote {
   }
 }
 
-/* line 46 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 45 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @keyframes fadeInUp {
 
-/* line 47 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 46 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1351,7 +1338,7 @@ blockquote {
     transform: translateY(20px);
   }
 
-/* line 50 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 49 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1364,10 +1351,10 @@ blockquote {
   }
 }
 
-/* line 54 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 53 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-moz-keyframes fadeInDown {
 
-/* line 55 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 54 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1379,7 +1366,7 @@ blockquote {
     transform: translateY(-20px);
   }
 
-/* line 58 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 57 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1392,10 +1379,10 @@ blockquote {
   }
 }
 
-/* line 54 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 53 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-webkit-keyframes fadeInDown {
 
-/* line 55 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 54 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1407,7 +1394,7 @@ blockquote {
     transform: translateY(-20px);
   }
 
-/* line 58 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 57 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1420,10 +1407,10 @@ blockquote {
   }
 }
 
-/* line 54 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 53 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-o-keyframes fadeInDown {
 
-/* line 55 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 54 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1435,7 +1422,7 @@ blockquote {
     transform: translateY(-20px);
   }
 
-/* line 58 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 57 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1448,10 +1435,10 @@ blockquote {
   }
 }
 
-/* line 54 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 53 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @keyframes fadeInDown {
 
-/* line 55 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 54 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1463,7 +1450,7 @@ blockquote {
     transform: translateY(-20px);
   }
 
-/* line 58 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 57 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 1;
     -ms-filter: none;
@@ -1476,10 +1463,10 @@ blockquote {
   }
 }
 
-/* line 64 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 63 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-moz-keyframes fadeOutUp {
 
-/* line 65 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 64 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 1;
     -ms-filter: none;
@@ -1491,7 +1478,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 68 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 67 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1504,10 +1491,10 @@ blockquote {
   }
 }
 
-/* line 64 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 63 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-webkit-keyframes fadeOutUp {
 
-/* line 65 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 64 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 1;
     -ms-filter: none;
@@ -1519,7 +1506,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 68 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 67 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1532,10 +1519,10 @@ blockquote {
   }
 }
 
-/* line 64 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 63 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-o-keyframes fadeOutUp {
 
-/* line 65 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 64 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 1;
     -ms-filter: none;
@@ -1547,7 +1534,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 68 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 67 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1560,10 +1547,10 @@ blockquote {
   }
 }
 
-/* line 64 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 63 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @keyframes fadeOutUp {
 
-/* line 65 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 64 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 1;
     -ms-filter: none;
@@ -1575,7 +1562,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 68 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 67 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1588,10 +1575,10 @@ blockquote {
   }
 }
 
-/* line 72 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 71 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-moz-keyframes fadeOutDown {
 
-/* line 73 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 72 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 1;
     -ms-filter: none;
@@ -1603,7 +1590,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 76 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 75 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1616,10 +1603,10 @@ blockquote {
   }
 }
 
-/* line 72 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 71 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-webkit-keyframes fadeOutDown {
 
-/* line 73 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 72 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 1;
     -ms-filter: none;
@@ -1631,7 +1618,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 76 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 75 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1644,10 +1631,10 @@ blockquote {
   }
 }
 
-/* line 72 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 71 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-o-keyframes fadeOutDown {
 
-/* line 73 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 72 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 1;
     -ms-filter: none;
@@ -1659,7 +1646,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 76 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 75 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1672,10 +1659,10 @@ blockquote {
   }
 }
 
-/* line 72 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 71 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @keyframes fadeOutDown {
 
-/* line 73 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 72 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 1;
     -ms-filter: none;
@@ -1687,7 +1674,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 76 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 75 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1700,10 +1687,10 @@ blockquote {
   }
 }
 
-/* line 82 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 81 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-moz-keyframes slideInUp {
 
-/* line 83 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 82 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1715,7 +1702,7 @@ blockquote {
     transform: translateY(2000px);
   }
 
-/* line 86 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 85 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1725,10 +1712,10 @@ blockquote {
   }
 }
 
-/* line 82 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 81 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-webkit-keyframes slideInUp {
 
-/* line 83 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 82 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1740,7 +1727,7 @@ blockquote {
     transform: translateY(2000px);
   }
 
-/* line 86 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 85 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1750,10 +1737,10 @@ blockquote {
   }
 }
 
-/* line 82 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 81 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-o-keyframes slideInUp {
 
-/* line 83 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 82 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1765,7 +1752,7 @@ blockquote {
     transform: translateY(2000px);
   }
 
-/* line 86 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 85 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1775,10 +1762,10 @@ blockquote {
   }
 }
 
-/* line 82 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 81 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @keyframes slideInUp {
 
-/* line 83 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 82 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1790,7 +1777,7 @@ blockquote {
     transform: translateY(2000px);
   }
 
-/* line 86 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 85 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1800,10 +1787,10 @@ blockquote {
   }
 }
 
-/* line 89 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 88 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-moz-keyframes slideInDown {
 
-/* line 90 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 89 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1815,7 +1802,7 @@ blockquote {
     transform: translateY(-2000px);
   }
 
-/* line 93 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 92 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1825,10 +1812,10 @@ blockquote {
   }
 }
 
-/* line 89 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 88 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-webkit-keyframes slideInDown {
 
-/* line 90 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 89 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1840,7 +1827,7 @@ blockquote {
     transform: translateY(-2000px);
   }
 
-/* line 93 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 92 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1850,10 +1837,10 @@ blockquote {
   }
 }
 
-/* line 89 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 88 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-o-keyframes slideInDown {
 
-/* line 90 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 89 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1865,7 +1852,7 @@ blockquote {
     transform: translateY(-2000px);
   }
 
-/* line 93 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 92 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1875,10 +1862,10 @@ blockquote {
   }
 }
 
-/* line 89 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 88 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @keyframes slideInDown {
 
-/* line 90 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 89 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1890,7 +1877,7 @@ blockquote {
     transform: translateY(-2000px);
   }
 
-/* line 93 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 92 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1900,10 +1887,10 @@ blockquote {
   }
 }
 
-/* line 98 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 97 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-moz-keyframes slideOutUp {
 
-/* line 99 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 98 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1912,7 +1899,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 101 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 100 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1925,10 +1912,10 @@ blockquote {
   }
 }
 
-/* line 98 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 97 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-webkit-keyframes slideOutUp {
 
-/* line 99 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 98 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1937,7 +1924,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 101 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 100 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1950,10 +1937,10 @@ blockquote {
   }
 }
 
-/* line 98 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 97 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-o-keyframes slideOutUp {
 
-/* line 99 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 98 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1962,7 +1949,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 101 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 100 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1975,10 +1962,10 @@ blockquote {
   }
 }
 
-/* line 98 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 97 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @keyframes slideOutUp {
 
-/* line 99 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 98 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1987,7 +1974,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 101 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 100 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -2000,10 +1987,10 @@ blockquote {
   }
 }
 
-/* line 105 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 104 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-moz-keyframes slideOutDown {
 
-/* line 106 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 105 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -2012,7 +1999,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 108 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 107 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -2025,10 +2012,10 @@ blockquote {
   }
 }
 
-/* line 105 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 104 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-webkit-keyframes slideOutDown {
 
-/* line 106 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 105 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -2037,7 +2024,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 108 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 107 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -2050,10 +2037,10 @@ blockquote {
   }
 }
 
-/* line 105 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 104 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @-o-keyframes slideOutDown {
 
-/* line 106 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 105 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -2062,7 +2049,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 108 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 107 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -2075,10 +2062,10 @@ blockquote {
   }
 }
 
-/* line 105 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 104 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 @keyframes slideOutDown {
 
-/* line 106 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 105 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   0% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -2087,7 +2074,7 @@ blockquote {
     transform: translateY(0);
   }
 
-/* line 108 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 107 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -2102,8 +2089,8 @@ blockquote {
 
 /* line 5 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 html {
-  height: 100%;
-  min-height: 30em;
+  height: 30em;
+  min-height: 100%;
 }
 
 /* line 9 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
@@ -2207,11 +2194,11 @@ body:after {
 .tagline {
   font-size: 2.25em;
   line-height: 1;
-  padding: 0.5em 0;
+  padding: 1em 0;
   text-align: center;
   font-weight: normal;
   color: #fff;
-  max-width: 100%;
+  overflow: hidden;
 }
 @media only screen and (min-width: 769px) {
 
@@ -2238,16 +2225,8 @@ body:after {
   }
 }
 
-/* line 79 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
-.main-header {
-  position: relative;
-  z-index: 100;
-  padding: 7em 0 1em;
-  overflow: hidden;
-}
-
-/* line 84 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
-.main-header:before {
+/* line 78 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+.tagline:before {
   content: "";
   display: block;
   width: 100%;
@@ -2255,58 +2234,65 @@ body:after {
   background: #f25e5c;
 }
 
-/* line 92 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 86 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+.main-header {
+  position: relative;
+  z-index: 100;
+  padding: 6em 0 1em;
+}
+
+/* line 91 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 .main-content {
   position: relative;
   z-index: 100;
   padding-bottom: 2em;
 }
 
-/* line 98 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 97 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 .nav {
   padding: 1em 0;
 }
 
-/* line 101 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 100 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 .nav .nav-items {
   list-style: none;
   text-align: center;
 }
 
-/* line 105 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 104 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 .nav .nav-item {
   display: inline-block;
 }
 
-/* line 108 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 107 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 .nav .item-link {
   border-bottom: none;
 }
 
-/* line 110 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 109 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 .nav .item-link:hover {
   color: #f25e5c;
   border-bottom: solid 5px #f25e5c;
   margin-bottom: -5px;
 }
 
-/* line 115 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 114 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 
-/* line 116 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 115 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 .nav.current .item-link {
   border-bottom: solid 5px #f25e5c;
   margin-bottom: -5px;
 }
 @media only screen and (min-width: 769px) {
 
-/* line 120 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 119 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
   .nav.current {
     margin: 0 1em;
     letter-spacing: 0.05em;
   }
 }
 
-/* line 124 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 123 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 .main-footer {
   position: absolute;
   bottom: 0.25em;
@@ -2315,38 +2301,38 @@ body:after {
   z-index: 2;
 }
 
-/* line 132 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 131 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 
-/* line 134 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 133 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+
+/* line 137 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 
 /* line 138 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
-
-/* line 139 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 .section-social .nav-social,
 .section-social .nav-items {
   display: inline;
 }
 
-/* line 144 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 143 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 #sandbox-container {
   position: relative;
   z-index: 100;
 }
 
-/* line 148 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 147 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 #experiments {
   width: 100%;
   height: 100%;
 }
 
-/* line 151 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
+/* line 150 : /Users/constantx/projects/constantx/constantx.com/stylus/main.styl */
 #experiments canvas {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 136 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
+/* line 135 : /Users/constantx/projects/constantx/constantx.com/stylus/base/animate.styl */
 
 /* line 1 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/prism.styl */
 

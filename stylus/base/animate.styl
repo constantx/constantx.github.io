@@ -3,12 +3,11 @@
 @keyframes wander
   0%
     transform: rotate(0) translate3d(0, 0, 0)
-    opacity: 0.2
-  50%
-    transform: rotate(360deg) translate3d(100%, 100%, 50em)
     opacity: 0.5
+  50%
+    transform: rotate(360deg) translate3d(50%, 50%, 0)
   100%
-    transform: rotate(-360deg) translate3d(-100%, -100%, -50em)
+    transform: rotate(-360deg) translate3d(-50%, -50%, 0)
     opacity: 1
 
 
@@ -136,5 +135,5 @@ animated()
   animation-name: slideOutDown
 
 .wander
-  animation: wander 30s ease-in-out 0.3s infinite alternate
+  animation: wander 60s ease-in-out 0.3s infinite alternate
   animation-fill-mode: both
