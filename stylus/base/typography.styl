@@ -68,16 +68,17 @@ p
   margin-bottom: 1em
 
 a
-  color: color_text
   text-decoration: none
-  @extend .has-ligature
 
 p, ul, ol
   a
-    border-bottom: solid 2px color_main
+    @extend .has-shadow
+    @extend .has-ligature
+    color: color_light
+    border-bottom: solid 1px color_main
     transition: border-color 0.2s ease-in
     &:hover
-      border-bottom-color: color_main_cool
+      border-bottom-width: 2px
   em
     font-style: italic
   strong

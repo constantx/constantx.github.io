@@ -6,7 +6,7 @@
 
   <header class='container'>
     <h1 class="entry-title">
-      <a href="{{ permalink }}">{{ title }}</a>
+      <a href="/{{ path }}">{{{ title }}}</a>
     </h1>
   </header>
 
@@ -24,8 +24,8 @@
         <aside class="entry-meta">
           <span class="byline author vcard">
             {{#author}}
-            <a href="//github.com/{{{github}}}">
-              Author: {{{name}}}
+            <a href="//github.com/{{github}}">
+              Author: {{{ name }}}
             </a>
             {{/author}}
           </span>
@@ -45,11 +45,9 @@
         </p>
         {{/is_teaser}}
 
-        {{^is_teaser}}
-          {{! <aside class="social" role="social-media">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="constantx" data-related="cosntantx">Tweet</a>
-          </aside>}}
-        {{/is_teaser}}
+        {{! <aside class="social" role="social-media">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-via="constantx" data-related="cosntantx">Tweet</a>
+        </aside>}}
       </div>
     </div>
   </div>
