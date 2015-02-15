@@ -28,9 +28,13 @@
               Author: {{{name}}}
             </a>
             {{/author}}
-            &nbsp;&nbsp;|&nbsp;&nbsp;
           </span>
-          <time class="published" datetime="{{#iso_date}}{{ published_date }}{{/iso_date}}" pubdate>on {{#long_date}}{{published_date}}{{/long_date}}</time>
+
+          {{#date}}
+          <time class="published">
+          &nbsp;&nbsp;|&nbsp;&nbsp;on {{ date }}
+          </time>
+          {{/date}}
         </aside>
 
         {{{ contents }}}
