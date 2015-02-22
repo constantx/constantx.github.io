@@ -11,7 +11,8 @@
 				"node_modules",
 				"components",
 				"dist",
-				".grunt"
+				".grunt",
+				"public/js/vendor"
 			],
 			"follow_symlinks": true,
 			"path": "."

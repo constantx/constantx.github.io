@@ -12,6 +12,7 @@
     "grunt-contrib-uglify": "~0.2.7",
     "grunt-contrib-watch": "*",
     "grunt-gh-pages": "~0.9.1",
+    "grunt-jscs": "^1.5.0",
     "grunt-metalsmith": "^1.0.0",
     "grunt-shell": "~0.6.4",
     "matchdep": "~0.3.0",
@@ -27,7 +28,6 @@
     "metalsmith-static": "0.0.5",
     "metalsmith-watch": "^0.2.0",
     "mustache": "^1.0.0",
-    "swig": "^1.4.2",
     "underscore": "1.6.0"
   }
 }

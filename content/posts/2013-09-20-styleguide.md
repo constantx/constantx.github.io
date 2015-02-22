@@ -6,7 +6,7 @@ date: 2013-09-20
 author:
   name: Truong Nguyen
   github: constantx
-  avatar: https://0.gravatar.com/avatar/bdd22ad361650cddb58011e5d301e67b?d=https%3A%2F%2Fidenticons.github.com%2F78111570a7c73234b9c1d28182759030.png&s=420
+  avatar: http://i.imgur.com/mDTn6eC.jpg
 tags:
 - styleguide
 - reference
@@ -29,24 +29,21 @@ Lorem ipsum dolor sit amet, _consectetur adip isicing elit_, sed do eiusmodtempo
 ![cat? - by constantx](/img/cover.jpg)
 
 ## Codeblock
-Punch-blog uses [Prism.js](http://prismjs.com/) for automatic syntax highlighting.
-Code block highlighted via prism.js:
+[Prism.js](http://prismjs.com/) is used for automatic syntax highlighting.
 ```javascript
-  "blog": {
-    "posts_dir": "posts",
-    "post_format": "markdown",
-    "post_url": "/{year}/{month}/{date}/{title}",
-    "teaser_length": 2,
-    "homepage_posts": 10,
-
-    "archive_urls": {
-      "all": "/archive",
-      "year": "/{year}",
-      "year_month": "/{year}/{month}",
-      "year_month_date": "/{year}/{month}/{date}",
-      "tag": "/tag/{tag}"
-    }
-  }
+module.exports = {
+  'social': [{
+    'type': 'dribbble',
+    'title': 'dribbble',
+    'icon': 'typcn typcn-social-dribbble',
+    'href': 'https://dribbble.com/constantx'
+  }, {
+    'type': 'github',
+    'title': 'github',
+    'icon': 'typcn typcn-social-github',
+    'href': 'https://github.com/constantx'
+  }]
+};
 ```
 
 ## List
