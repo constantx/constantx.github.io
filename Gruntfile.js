@@ -47,18 +47,20 @@ module.exports = function(grunt) {
     metalsmith: {
       'dist': {
         options: {
-          'metadata': require('./config'),
-          'plugins': {
+          metadata: require('./config'),
+          plugins: {
             'metalsmith-drafts': {},
             'metalsmith-filemetadata': [{
-              'pattern': 'posts/*',
-              'metadata': {
-                'isPost': true
+              pattern: 'posts/*',
+              metadata: {
+                isPost: true,
+                layout: 'post.mustache'
               }
             }, {
-              'pattern': 'experiments/*',
-              'metadata': {
-                'isExperiment': true
+              pattern: 'experiments/*',
+              metadata: {
+                isExperiment: true,
+                layout: 'experiment.mustache'
               }
             }],
             'metalsmith-collections': {
