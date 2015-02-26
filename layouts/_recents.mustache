@@ -1,11 +1,13 @@
 <div class="section">
   <p>Recently wrote about:
     {{#recentPosts}}
-    <a href="{{ path }}" title="{{ title }}">{{ title }}</a>
-    {{/recentPosts}},
+    <a href="{{ path }}" title="{{ title }}">{{ title }}</a>,
+    {{/recentPosts}}
+  </p>
 
+  <p>Experimented with:
     {{#recentExperiments}}
-    <a href="{{ path }}" title="{{ title }}">{{ title }}</a>
+    <a href="{{ path }}" title="{{ title }}">{{ title }}</a>,
     {{/recentExperiments}}
   </p>
 </div>
