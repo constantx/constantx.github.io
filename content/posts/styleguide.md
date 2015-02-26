@@ -1,7 +1,6 @@
 ---
 title: Styleguide
 cover: /img/cover.jpg
-layout: post.mustache
 date: 2013-09-20
 author:
   name: Truong Nguyen
