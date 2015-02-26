@@ -2502,7 +2502,13 @@ body:after {
   padding: 4em 0;
 }
 
-/* line 22 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 13 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+.hentry .entry-title a {
+  color: rgba(255,255,255,0.95);
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
+/* line 17 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-cover {
   position: absolute;
   z-index: 0;
@@ -2514,13 +2520,13 @@ body:after {
   overflow: hidden;
 }
 
-/* line 31 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 26 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-cover img {
   width: 100%;
   height: auto;
 }
 
-/* line 36 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 31 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-cover:after {
   content: "";
   position: absolute;
@@ -2531,7 +2537,7 @@ body:after {
   background: rgba(0,0,0,0.5);
 }
 
-/* line 45 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 40 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-meta {
   font-family: "faricy-new-web", Helvetica, Arial, sans-serif;
   font-size: 0.7273em;
@@ -2540,18 +2546,18 @@ body:after {
   margin-bottom: 1em;
 }
 
-/* line 51 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 46 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-meta a {
   color: inherit;
 }
 
-/* line 54 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 49 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .post-teaser-link {
   font-weight: bold;
   text-align: right;
 }
 
-/* line 57 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 52 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .post-teaser-link a {
   padding-right: 0.5em;
   border-bottom: none;
@@ -2563,13 +2569,13 @@ body:after {
   transition: border-width 0.1s ease-in;
 }
 
-/* line 62 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 57 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .post-teaser-link a:hover {
   border-width: 1em;
   border-color: #4bb4d9;
 }
 
-/* line 66 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 61 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-content-wrapper {
   position: relative;
   z-index: 1000;
@@ -2577,14 +2583,14 @@ body:after {
   background: #f9f9f9;
 }
 
-/* line 73 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 68 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 
-/* line 74 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 69 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-content pre[class*="language-"] {
   margin-bottom: 2em;
 }
 
-/* line 77 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 72 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-content h1,
 .hentry .entry-content h2,
 .hentry .entry-content h3,
@@ -2595,43 +2601,43 @@ body:after {
   font-family: "faricy-new-web", Helvetica, Arial, sans-serif;
 }
 
-/* line 81 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 76 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-content h1 {
   border-top: solid 1px #e7e9e9;
   margin-top: 0.5em;
 }
 
-/* line 85 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 80 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-content p {
   margin-bottom: 1em;
 }
 
-/* line 87 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 82 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-content p a {
   color: inherit;
 }
 
-/* line 89 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 84 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-content p img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 93 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 88 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-content ul {
   list-style: square;
   list-style-position: inside;
   margin-bottom: 1em;
 }
 
-/* line 98 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 93 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-content ol {
   list-style-position: inside;
   list-style-type: decimal;
   margin-bottom: 1em;
 }
 
-/* line 103 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 98 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-content blockquote {
   font-style: italic;
   border-left: solid 0.5em #ccd1d1;
@@ -2639,48 +2645,40 @@ body:after {
   margin-bottom: 1em;
 }
 
-/* line 108 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 103 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .entry-content blockquote p {
   margin-left: 1em;
   margin-bottom: 0;
 }
 
-/* line 112 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 107 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry .social {
   padding-top: 0.5em;
   border-top: solid 0.3em #e7e9e9;
 }
 
-/* line 116 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 111 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 
-/* line 117 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
-.hentry-has-cover .entry-title a {
-  color: rgba(255,255,255,0.95);
-  text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
-
-/* line 122 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 112 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .hentry-has-cover .entry-content-wrapper {
   padding-top: 3em;
 }
 
-/* line 125 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 115 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 
-/* line 126 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 116 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .posts .hentry {
   border-bottom: solid 1px #e7e9e9;
   margin-bottom: 1em;
 }
 
-/* line 129 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 119 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 .posts .hentry:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
 
-/* line 134 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
+/* line 124 : /Users/constantx/projects/constantx/constantx.com/stylus/modules/post.styl */
 code[class*="language-"],
 pre[class*="language-"] {
   font-family: inherit !important;

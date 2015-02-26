@@ -5,19 +5,14 @@
 
   .entry-title
     @extend .heading
-    // setHeading(4.682)
     position: relative
     text-align: center
     z-index: 2000
     font-family: font_heading
     padding: 4em 0
-    // @media only screen and (max-width: 1366px)
-    //   setHeading(3.375)
-    // @media only screen and (max-width: 769px)
-    //   text-align: center
-    //   setHeading(3.122)
-    // @media only screen and (max-width: 480px)
-    //   setHeading(2.25)
+    a
+      color: rgba(color_light, 0.95)
+      text-shadow: 1px 2px 3px rgba(0,0,0,0.3)
 
   .entry-cover
     position: absolute
@@ -114,11 +109,6 @@
     border-top: solid 0.3em color_border
 
 .hentry-has-cover
-  .entry-title a
-    color: rgba(color_light, 0.95)
-    text-shadow: 1px 2px 3px rgba(0,0,0,0.3)
-    padding-top: 20%
-    padding-bottom: 20%
   .entry-content-wrapper
     padding-top: 3em
 
