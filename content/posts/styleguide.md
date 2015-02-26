@@ -2,6 +2,7 @@
 title: Styleguide
 cover: /img/cover.jpg
 date: 2013-09-20
+draft: false
 author:
   name: Truong Nguyen
   github: constantx
