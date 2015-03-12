@@ -146,13 +146,9 @@ module.exports = function(grunt) {
     },
 
     'watch': {
-      gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint']
-      },
       build: {
         files: [
-          '<%= stylus.dist.files[0].cwd %>/**/*',
+          '<%= stylus.dist.files[0].cwd %>/**/*.styl',
           './config.js',
           './layouts/**/*',
           './content/**/*',
