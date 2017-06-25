@@ -12,16 +12,16 @@ module.exports = {
   'production': process.env.NODE_ENV !== 'development',
 
   'social': [{
+    'type': 'linkedin',
+    'title': 'LinkedIn',
+    'icon': 'typcn typcn-social-linkedin',
+    'href': 'https://www.linkedin.com/in/constantx',
+    'last': false
+  }, {
     'type': 'angellist',
     'title': 'AngelList',
     'icon': 'typcn typcn-social-linkedin',
     'href': 'https://angel.co/constantx',
-    'last': false
-  }, {
-    'type': 'github',
-    'title': 'GitHub',
-    'icon': 'typcn typcn-social-github',
-    'href': 'https://github.com/constantx',
     'last': false
   }, {
     'type': 'dribbble',
@@ -30,10 +30,10 @@ module.exports = {
     'href': 'https://dribbble.com/constantx',
     'last': false
   }, {
-    'type': 'linkedin',
-    'title': 'LinkedIn',
-    'icon': 'typcn typcn-social-linkedin',
-    'href': 'https://www.linkedin.com/in/constantx',
+    'type': 'github',
+    'title': 'GitHub',
+    'icon': 'typcn typcn-social-github',
+    'href': 'https://github.com/constantx',
     'last': false
   }, {
     'type': 'twitter',
@@ -41,12 +41,12 @@ module.exports = {
     'icon': 'typcn typcn-social-twitter',
     'href': 'https://twitter.com/constantx',
     'last': false
-  }, {
-    'type': 'portfolio',
-    'title': 'or this old visual design portfolio',
-    'icon': 'typcn typcn-starburst-outline',
-    'href': 'http://cargocollective.com/constantx',
-    'last': true
+  // }, {
+  //   'type': 'portfolio',
+  //   'title': 'or this old visual design portfolio',
+  //   'icon': 'typcn typcn-starburst-outline',
+  //   'href': 'http://cargocollective.com/constantx',
+  //   'last': true
   }],
 
   'nav-main': [{
