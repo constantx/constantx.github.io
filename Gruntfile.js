@@ -145,7 +145,16 @@ module.exports = function(grunt) {
       }
     },
 
-    'watch': {
+    // surge: {
+    //   constantx: {
+    //     options: {
+    //       project: '<%= dirs.dist %>',
+    //       domain: 'constantx.com'
+    //     }
+    //   }
+    // }
+
+    watch: {
       build: {
         files: [
           '<%= stylus.dist.files[0].cwd %>/**/*.styl',
@@ -159,7 +168,7 @@ module.exports = function(grunt) {
       }
     },
 
-    'concurrent': {
+    concurrent: {
       dev: {
         tasks: ['watch', 'connect'],
         options: {

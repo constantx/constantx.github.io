@@ -10,4 +10,4 @@ making and breaking
 - `$ grunt`
 
 ## deploy
-- push to github master, travis will build and push to gh-pages on greeen
+- push to github master, travis will build and push to gh-pages on green
