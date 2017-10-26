@@ -135,7 +135,7 @@ module.exports = function(grunt) {
       src: ['**/*'],
       options: {
         base: '<%= dirs.dist %>',
-        repo: 'https://' + process.env.GH_TOKEN + '@github.com/constantx/constantx.github.io.git',
+        repo: 'https://' + process.env.GH_TOKEN + '@github.com/constantx/constantx.com.git',
         silent: true,
         branch: 'gh-pages',
         user: {

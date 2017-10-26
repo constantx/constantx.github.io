@@ -19,5 +19,4 @@ after_success:
 skip_cleanup: true
 env:
   global:
-  - secure: LB9oDVE5WhtwO0EC+LlNRWj9aGu/kulSq5gOxvytedDvfKPOETpT8faSDBWJGDM8o3A9F7Z/gcBmRkc2JsKbD6FMOokgQ7b6XSz9j2jHISM+Z2DczPSw55Ga2KRueGoZOcupKz89QKKv3wb/PURiILdb+ifIA5CfHXnZnW3YKsY=
-  - secure: JN69IKh3vBx4CCJAXDURp+tDXGnenrOgKJPkCiMfXXopBznf5UjdSf4/zIQ/03jkXsmZNMMrI3+tYVpmjyAK4wccxQZpXKvsHTOdXIzefnuslk4fvHkhng8zdfvrXxu1a3vWDFLgGY6CGUi9kbnpZSrucXRHhHO8a4stuClMGpA=
+    secure: IE5UC2CHE3nQSeMGL/N+25A0D1hzIN9nbRKHmLqz32j5p4hE0CBMtbVTILcBwWbMR+Mgi3RUqKpuqb3SsyncEDEmoEdqhs2zIwBsDv+KrMMhqg68yNa8wOdShfxTpaXKIDe+f/Ml1ETPKcHLQknYLIvXBCP34uRQ74Afe7DHT9E=
